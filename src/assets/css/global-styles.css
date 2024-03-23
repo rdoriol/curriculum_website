@@ -1,0 +1,33 @@
+:root {
+  /* Backgrounds Colors*/
+  --blackBody: #1E2129;
+  --black: #111317;
+  --blackCarbon: #3C3E44;
+
+  /* Fonts Colors */
+  --whiteDark: #F5F5F5;
+  --whiteDarkness: #E3F3F2; /* de mommento no se utiliza */
+  --blueElectric2: #00B0C8;
+  --blueElectric: #04FBFF;
+
+  /* Fonts Families */
+  --museoModerno: "MuseoModerno", sans-serif;
+
+}
+/* GLOBALS
+-----------*/
+body {
+  box-sizing: border-box;
+  background-color: var(--blackBody);
+  color: var(--whiteDark);
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+a:link, :visited, :active{
+  color: var(--whiteDark);
+}
+

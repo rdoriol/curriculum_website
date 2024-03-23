@@ -1,0 +1,56 @@
+.main_top_header {
+  background-color: var(--black);
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: var(--museoModerno);
+  color: var(--blueElectric);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.item_main_top_header {
+  position: relative;
+}
+
+.tooltip_content {
+  display: none;
+  padding: 10px;
+  border-radius: 2px;
+  width: 130px;
+  height: auto;
+  text-align: center;
+  padding: 6px;
+  background-color: var(--blueElectric2);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  position: absolute;
+  top: 45px;
+  left: 3.5px;
+  z-index: 1;
+  transition: 3s;
+}
+
+.item_main_top_header a {
+  color: var(--blueElectric);
+  display: inline-flex;
+  column-gap: 10px;
+  transition: .3s;
+}
+
+.item_main_top_header a img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.item_main_top_header a:hover {
+  opacity: 0.5;
+}
+
+.item_main_top_header:hover .tooltip_content {
+  display: block;
+
+}
+
