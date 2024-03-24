@@ -13,44 +13,86 @@
   position: relative;
 }
 
-.tooltip_content {
+@keyframes fadeIn {   /* animation fade */
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+  /* Email Icon
+  -------------*/
+.item_main_top_header .tooltip_content {
   display: none;
   padding: 10px;
   border-radius: 2px;
   width: 130px;
   height: auto;
   text-align: center;
-  padding: 6px;
+  padding: 4px;
   background-color: var(--blueElectric2);
   color: #000;
   font-size: 11px;
   font-weight: 600;
   position: absolute;
   top: 45px;
-  left: 3.5px;
+  left: 6.5px;
   z-index: 1;
-  transition: 3s;
+  animation: fadeIn 1.5s;
 }
 
-.item_main_top_header a {
+.email_top_header a {
   color: var(--blueElectric);
   display: inline-flex;
   column-gap: 10px;
-  transition: .3s;
+  transition: .5s;
 }
 
-.item_main_top_header a img {
+.email_top_header a img {
   width: 20px;
   height: 20px;
   align-self: center;
 }
 
-.item_main_top_header a:hover {
+.email_top_header a:hover {
   opacity: 0.5;
 }
 
-.item_main_top_header:hover .tooltip_content {
+.email_top_header:hover .tooltip_content {
   display: block;
-
 }
+
+  /* Sun Icon
+  ------------*/
+
+.light_dark_mode {
+  display: flex;
+  align-items: center;
+}
+
+.light_dark_mode img {
+  width: 35px;
+  height: 35px;
+  transition: .5s;
+}
+
+.light_dark_mode .tooltip_content {
+  left: -50px;
+  padding: 4px;
+}
+
+.light_dark_mode .dark_mode,
+.light_dark_mode .light_mode {
+  display: none;
+}
+
+.light_dark_mode img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.light_dark_mode:hover .light_mode, .light_dark_mode:hover .dark_mode {
+  display: inline-block;
+}
+
+
+
 

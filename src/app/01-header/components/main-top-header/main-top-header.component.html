@@ -2,13 +2,15 @@
   <div class="item_main_top_header email_top_header">
     <span class="tooltip_content">Enviar correo electrónico</span>
     <a href="mailto: rdoriol@gmail.com">
-      <img class="email_blue" src="../assets/icons/email-blue-50.x50.png" alt="email image">
+      <img class="email_blue" src="../assets/icons/email-blue-50.x50.png" alt="email_image">
       <p>{{ cvRobertoChild.media.email }}</p>
     </a>
   </div>
-  <div class="item_main_top_header light_dark_mode">
-    <span class="tooltip_content dark_mode">Cambiar a modo oscuro</span>
-    <span class="tooltip_content light_mode">Cambiar a modo claro</span>
-    <p>modo oscuro</p>
+  <div class="item_main_top_header light_dark_mode" (click)="changeMode()">
+      <span class="tooltip_content dark_mode" *ngIf="lightMode == true; else light_mode">Cambiar a modo oscuro</span>
+    <ng-template #light_mode>
+      <span class="tooltip_content light_mode">Cambiar a modo claro</span>
+    </ng-template>
+    <img id="icon_mode" src="../assets/icons/sun-blue-50.x50.png">
   </div>
 </div>
