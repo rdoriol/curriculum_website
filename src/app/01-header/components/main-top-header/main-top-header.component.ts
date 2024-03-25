@@ -14,21 +14,34 @@ export class MainTopHeaderComponent {
     // of type any for avoid duplicate code from interface definition Curriculum Vitae
   public cvRobertoChild: any = { }
 
-  public lightMode: boolean = false;
+    // Se almacena una posible variable de sesión para modo ligth/dark
+  public lightMode: any = sessionStorage.getItem("mode");
 
+    // Método que cambiará el modo de visualización de la web (modo light/dark)
   public changeMode() {
     let icon = document.getElementById("icon_mode");
 
-    if(this.lightMode == false) {
+    if(this.lightMode == "dark") {
       icon!.setAttribute("src", "../assets/icons/moon-blue-50.x50.png");
-      this.lightMode = true;
-      document.getElementsByTagName("body")[0].setAttribute("style", "background-color: #f5f5f5;");
+      document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
+      sessionStorage.setItem("mode", "light");
+      this.lightMode = "light";
     }
     else {
       icon!.setAttribute("src", "../assets/icons/sun-blue-50.x50.png");
-      this.lightMode = false;
-      document.getElementsByTagName("body")[0].removeAttribute("style");
+      document.getElementsByTagName("link")[3].setAttribute("href", '#');
+      sessionStorage.setItem("mode", "dark");
+      this.lightMode = "dark";
     }
   }
 
 }
+
+/*
+  window.addEventListener("scroll", function prueba(event) {
+
+      if(this.window.scrollY >= 900) {
+        document.getElementsByClassName("top_header_name")[0].setAttribute("style", "display: inline-block");
+      }
+  })
+*/

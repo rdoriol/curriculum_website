@@ -1,21 +1,20 @@
 .main_top_header {
+  position: fixed;
   background-color: var(--black);
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
   width: 100%;
   font-family: var(--museoModerno);
   color: var(--blueElectric);
   font-size: 13px;
   font-weight: 400;
+  height: 37px;
 }
 
 .item_main_top_header {
   position: relative;
-}
+  padding: 0 10px;
 
-@keyframes fadeIn {   /* animation fade */
-  0% { opacity: 0 }
-  100% { opacity: 1 }
 }
 
   /* Email Icon
@@ -34,31 +33,48 @@
   font-weight: 600;
   position: absolute;
   top: 45px;
-  left: 6.5px;
+  left: 11px;
   z-index: 1;
   animation: fadeIn 1.5s;
 }
 
 .email_top_header a {
   color: var(--blueElectric);
-  display: inline-flex;
-  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  height: 100%;
   transition: .5s;
 }
 
 .email_top_header a img {
   width: 20px;
   height: 20px;
-  align-self: center;
+  vertical-align: middle;
 }
 
 .email_top_header a:hover {
   opacity: 0.5;
 }
 
-.email_top_header:hover .tooltip_content {
+.email_top_header:hover .first_tooltip_content {
   display: block;
 }
+
+/* Top Header Name
+  ----------------*/
+
+  .top_header_name {
+    position: absolute;
+    left: calc(50% - 70px);
+    transition: 0.5s;
+    animation: showUpDown 1s;
+  }
+
+  .name {
+    color: var(--blueElectric);
+    font-size: 25px;
+  }
 
   /* Sun Icon
   ------------*/
@@ -93,6 +109,26 @@
   display: inline-block;
 }
 
+  /* RESPONSIVE WEB DESIGN
+  ------------------------*/
 
+  @media(width <=  800px) {
+    .main_top_header {
+      justify-content: space-between;
+    }
+  }
 
+  @media(width <=  500px) {
+    .email_top_header a span {
+      display: none;
+    }
+
+    .email_top_header:hover .second_tooltip_content {
+      display: block;
+    }
+
+    .email_top_header:hover .first_tooltip_content {
+      display: none;
+    }
+  }
 

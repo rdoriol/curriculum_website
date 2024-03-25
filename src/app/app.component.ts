@@ -39,6 +39,17 @@ export class AppComponent {
     training: this.cvJson.training,
     extras: this.cvJson.extras
   }
+    // Se comprueba si hay alguna variable de sesión almacenada para aplicar modo light o dark
+  public mainLoad = () => {
+    let icon = document.getElementById("icon_mode");
+
+    if(sessionStorage.getItem("mode") == "light") {
+      document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
+      icon!.setAttribute("src", "../assets/icons/moon-blue-50.x50.png");
+    }
+  };
+
+
 }
 
 

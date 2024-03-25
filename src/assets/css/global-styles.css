@@ -6,12 +6,16 @@
 
   /* Fonts Colors */
   --whiteDark: #F5F5F5;
+  --whiteDarkProxya: #F7F7F7;
   --whiteDarkness: #E3F3F2; /* de mommento no se utiliza */
   --blueElectric2: #00B0C8;
   --blueElectric: #04FBFF;
+  --yellow: #FFC107;
 
   /* Fonts Families */
   --museoModerno: "MuseoModerno", sans-serif;
+  --edu: "Edu NSW ACT Foundation", cursive;
+
 
 }
 /* GLOBALS
@@ -20,6 +24,7 @@ body {
   box-sizing: border-box;
   background-color: var(--blackBody);
   color: var(--whiteDark);
+  height: 5000px;
 }
 
 a {
@@ -31,3 +36,15 @@ a:link, :visited, :active{
   color: var(--whiteDark);
 }
 
+/* ANIMATIONS
+--------------*/
+
+@keyframes fadeIn {   /* animation fade */
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes showUpDown {
+  0% { translate: 0px -30px }
+  100% { translate: 0px 0px }
+}
