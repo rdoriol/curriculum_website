@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-header',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main-header.component.css'
 })
 export class MainHeaderComponent {
-
+  @Input()
+   // of type any for avoid duplicate code from interface definition Curriculum Vitae
+   public cvRobertoChild: any = { }
 }

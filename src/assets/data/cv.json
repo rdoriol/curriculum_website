@@ -1,13 +1,13 @@
 {
-    "avatar": "/favicon.ico",
+    "avatar": "../assets/images/foto-carnet.jpg",
     "name": "Roberto Díaz Oriol",
     "title": "Desarrollador Full Stack",
     "location": "Sevilla, España",
     "media": {
         "email": "rdoriol@gmail.com",
-        "cv": "./data/data.json",
-        "github": "https://github.com",
-        "linkedin": "https://linkedin.com"
+        "cv": "../data/CV_Roberto_Diaz_Oriol.json",
+        "github": "https://github.com/rdoriol",
+        "linkedin": "https://www.linkedin.com/in/robertodiazoriol"
     },
     "about": "Descripción",
     "technologies": [

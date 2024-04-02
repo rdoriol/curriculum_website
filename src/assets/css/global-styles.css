@@ -1,6 +1,6 @@
 :root {
   /* Backgrounds Colors*/
-  --blackBody: #1E2129;
+  --blackBody: #1e2129;
   --black: #111317;
   --blackCarbon: #3C3E44;
 
@@ -8,8 +8,8 @@
   --whiteDark: #F5F5F5;
   --whiteDarkProxya: #F7F7F7;
   --whiteDarkness: #E3F3F2; /* de mommento no se utiliza */
-  --blueElectric2: #00B0C8;
-  --blueElectric: #04FBFF;
+  --blueElectric2: #04FBFF;
+  --blueElectric: #00B0C8;
   --yellow: #FFC107;
 
   /* Fonts Families */
@@ -36,6 +36,11 @@ a:link, :visited, :active{
   color: var(--whiteDark);
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* ANIMATIONS
 --------------*/
 
@@ -47,4 +52,27 @@ a:link, :visited, :active{
 @keyframes showUpDown {
   0% { translate: 0px -30px }
   100% { translate: 0px 0px }
+}
+
+/* TOOLTIPS
+--------------*/
+.tooltip_content {
+  display: none;
+  padding: 10px;
+  border-radius: 2px;
+  width: 130px;
+  height: auto;
+  text-align: center;
+  padding: 4px;
+  background-color: var(--blueElectric);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  animation: fadeIn 1.5s;
+}
+
+.tooltip_content a {
+  color: #000;
 }

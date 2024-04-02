@@ -45,7 +45,7 @@ export class AppComponent {
 
     if(sessionStorage.getItem("mode") == "light") {
       document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
-      icon!.setAttribute("src", "../assets/icons/moon-blue-50.x50.png");
+      icon!.setAttribute("src", "../assets/icons/moon-blue-50x50.png");
     }
   };
 

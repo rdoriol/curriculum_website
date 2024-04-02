@@ -2,8 +2,8 @@
   <div class="item_main_top_header email_top_header">
     <span class="tooltip_content first_tooltip_content">Enviar correo electrónico</span>
     <span class="tooltip_content second_tooltip_content">{{ cvRobertoChild.media.email }}</span>
-    <a href="mailto: rdoriol@gmail.com">
-      <img class="email_blue" src="../assets/icons/email-blue-50.x50.png" alt="email_image">
+    <a href="mailto: {{ cvRobertoChild.media.email }}">
+      <img class="email_blue" src="../assets/icons/social-icons/email-blue-50x50.png" alt="email_image">
       <span> {{ cvRobertoChild.media.email }} </span>
     </a>
   </div>
@@ -15,6 +15,9 @@
     <ng-template #light_mode>
       <span class="tooltip_content light_mode">Cambiar a modo claro</span>
     </ng-template>
-    <img id="icon_mode" src="../assets/icons/sun-blue-50.x50.png">
+    <img id="icon_mode" src="../assets/icons/sun-blue-50x50.png">
   </div>
 </div>
+
+
+

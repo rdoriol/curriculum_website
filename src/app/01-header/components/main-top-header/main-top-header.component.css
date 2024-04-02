@@ -1,5 +1,6 @@
 .main_top_header {
   position: fixed;
+  top: 0;
   background-color: var(--black);
   display: flex;
   justify-content: space-around;
@@ -9,33 +10,21 @@
   font-size: 13px;
   font-weight: 400;
   height: 37px;
+  z-index: 1;
 }
 
 .item_main_top_header {
   position: relative;
   padding: 0 10px;
-
 }
 
   /* Email Icon
   -------------*/
 .item_main_top_header .tooltip_content {
-  display: none;
-  padding: 10px;
-  border-radius: 2px;
-  width: 130px;
-  height: auto;
-  text-align: center;
-  padding: 4px;
-  background-color: var(--blueElectric2);
-  color: #000;
-  font-size: 11px;
-  font-weight: 600;
-  position: absolute;
+
   top: 45px;
   left: 11px;
-  z-index: 1;
-  animation: fadeIn 1.5s;
+
 }
 
 .email_top_header a {
@@ -69,6 +58,7 @@
     left: calc(50% - 70px);
     transition: 0.5s;
     animation: showUpDown 1s;
+    display: none;
   }
 
   .name {
