@@ -7,7 +7,7 @@
   background-position: center;
   background-blend-mode: darken;
   background-attachment: fixed;
-  height: 330px;
+  height: auto;
   font-family: var(--museoModerno);
   font-optical-sizing: auto;
   font-weight: 500;
@@ -17,43 +17,33 @@
 }
 
 .main_header_name {
-  /* position: absolute;
-  left: calc(25%);
-  top: 88px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .main_header_name h1 {
-  /*text-align: center;
-  display: inline;*/
-  font-size: 67px;
+  /*font-size: 67px;*/
   margin-bottom: 0;
 }
 
 .main_header_name h3 {
   font-weight: 400;
-  font-size: 30px;
+  /* font-size: 30px; */
   color: var(--blueElectric);
-  /*text-align: center; */
 }
 
 .main_header_name .social_media_ul {
   display: flex;
-  /*column-gap: 132px;
-  width: 100%;
-  justify-content: center;*/
-  position: absolute;
-  top: 240px;
+  /*column-gap: 10px;*/
 }
 
 .item_social_media_li {
-  padding: 2px;
-  margin: 2px;
+  /*padding: 2px;
+  margin: 2px;*/
   position: relative;
+  border: 1px solid;
 }
 
 .item_social_media_li a {
@@ -61,8 +51,8 @@
 }
 
 .item_social_media_li a img {
-  width: 100%;
-  /* vertical-align: middle; */
+  /*width: 50%;*/
+  max-width: 100%;
 }
 
 .item_social_media_li .tooltip_content {
@@ -75,9 +65,14 @@
   left: -30px;
 }
 
+.item_social_media_li .linkedin_tooltip_content {
+  width: 247px;
+  left: -107px;
+}
+
 .item_social_media_li .github_tooltip_content {
   width: 140px;
-  left: -49px;
+  left: -53px;
 }
 
 .flip_container {
@@ -123,6 +118,7 @@
 }
 
 .photo_carnet {
+  display: none;
   background-image: url("/assets/images/foto-carnet.jpg");
   height: 110px;
   width: 110px;

@@ -8,9 +8,9 @@
   --whiteDark: #F5F5F5;
   --whiteDarkProxya: #F7F7F7;
   --whiteDarkness: #E3F3F2; /* de mommento no se utiliza */
-  --blueElectric2: #04FBFF;
-  --blueElectric: #00B0C8;
-  --yellow: #FFC107;
+  --blueElectric2: #04FBFF; /* de momento no se está utilizando */
+  --blueElectric: #00b0c8;
+  --yellow: #FFC107;  /* de momento no se está utilizando */
 
   /* Fonts Families */
   --museoModerno: "MuseoModerno", sans-serif;

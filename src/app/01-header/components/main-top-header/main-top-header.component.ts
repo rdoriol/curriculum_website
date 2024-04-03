@@ -25,13 +25,13 @@ export class MainTopHeaderComponent {
     let icon = document.getElementById("icon_mode");
 
     if(this.lightMode == "dark") {
-      icon!.setAttribute("src", "../assets/icons/moon-blue-50x50.png");
+      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
       document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
       sessionStorage.setItem("mode", "light");
       this.lightMode = "light";
     }
     else {
-      icon!.setAttribute("src", "../assets/icons/sun-blue-50x50.png");
+      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
       document.getElementsByTagName("link")[3].setAttribute("href", '#');
       sessionStorage.setItem("mode", "dark");
       this.lightMode = "dark";

@@ -21,10 +21,8 @@
   /* Email Icon
   -------------*/
 .item_main_top_header .tooltip_content {
-
   top: 45px;
-  left: 11px;
-
+  left: 12px;
 }
 
 .email_top_header a {
@@ -66,7 +64,7 @@
     font-size: 25px;
   }
 
-  /* Sun Icon
+  /* Sun/Moon Icon
   ------------*/
 
 .light_dark_mode {
@@ -81,7 +79,7 @@
 }
 
 .light_dark_mode .tooltip_content {
-  left: -50px;
+  left: -39px;
   padding: 4px;
 }
 
