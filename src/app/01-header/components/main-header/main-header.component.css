@@ -24,7 +24,6 @@
 }
 
 .main_header_name h1 {
-  /*font-size: 67px;*/
   margin-bottom: 0;
 }
 
@@ -36,14 +35,11 @@
 
 .main_header_name .social_media_ul {
   display: flex;
-  /*column-gap: 10px;*/
+  column-gap: 10px;
 }
 
 .item_social_media_li {
-  /*padding: 2px;
-  margin: 2px;*/
   position: relative;
-  border: 1px solid;
 }
 
 .item_social_media_li a {
@@ -53,6 +49,7 @@
 .item_social_media_li a img {
   /*width: 50%;*/
   max-width: 100%;
+  aspect-ratio: 1;
 }
 
 .item_social_media_li .tooltip_content {
@@ -77,8 +74,8 @@
 
 .flip_container {
   perspective: 1000px;
-  width: 40px;
-  height: auto;
+  width: 25px;
+  height: 25px;
 }
 
 .item_social_media_li:hover .flipper {
@@ -130,6 +127,39 @@
   position: absolute;
   top: 24px;
   left: 3%;
+}
+
+
+/* RESPONSIVE WEB DESIGN
+------------------------- */
+
+@media only screen and (width >= 800px) {
+
+  .main_header_name h1 {
+    font-size: 50px;
+  }
+
+  .main_header_name h3 {
+    font-size: 25px;
+  }
+
+  .flip_container {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+@media only screen and (width >= 1370px) {
+
+  .main_header_name h1 {
+    font-size: 68px;
+  }
+
+  .main_header_name h3 {
+    font-size: 30px;
+  }
+
 }
 
 
