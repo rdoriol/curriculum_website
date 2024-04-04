@@ -1,7 +1,7 @@
 :root {
   /* Backgrounds Colors*/
   --blackBody: #1e2129;
-  --black: #111317;
+  --black: rgb(17, 19, 23);
   --blackCarbon: #3C3E44;
 
   /* Fonts Colors */

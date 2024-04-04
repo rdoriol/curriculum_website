@@ -1,19 +1,18 @@
 <div class="main_top_header">
   <div class="item_main_top_header email_top_header">
-    <span class="tooltip_content first_tooltip_content">Enviar correo electrónico</span>
-    <span class="tooltip_content second_tooltip_content">{{ cvRobertoChild.media.email }}</span>
-    <a href="mailto: {{ cvRobertoChild.media.email }}">
+    <span class="tooltip_content email_tooltip_content">Contacta conmigo</span>
+    <a href="#">
       <img class="email_blue" src="../assets/icons/social-icons/email-blue-64x64.png" alt="email_image">
-      <span> {{ cvRobertoChild.media.email }} </span>
+      <span *ngIf="!scrollTopHeader"> {{ cvRobertoChild.media.email }} </span>
     </a>
   </div>
-  <div class="item_main_top_header top_header_name">
+  <div class="item_main_top_header top_header_name" *ngIf="scrollTopHeader">
     <a href="../index.html"><span class="name">r</span>oberto<span class="name">d</span>íaz<span class="name">o</span>riol</a>
   </div>
   <div class="item_main_top_header light_dark_mode" (click)="changeMode()">
-      <span class="tooltip_content dark_mode" *ngIf="lightMode == 'light'; else light_mode">Cambiar a modo oscuro</span>
+      <span class="tooltip_content dark_mode" *ngIf="lightMode == 'light'; else light_mode">Cambiar a modo oscuro<img src="../assets/icons/arrow-diagonal-right.png"></span>
     <ng-template #light_mode>
-      <span class="tooltip_content light_mode">Cambiar a modo claro</span>
+      <span class="tooltip_content light_mode">Cambiar a modo claro<img src="../assets/icons/arrow-diagonal-right.png"></span>
     </ng-template>
     <img id="icon_mode" src="../assets/icons/sun-blue-64x64.png">
   </div>

@@ -133,6 +133,15 @@
 /* RESPONSIVE WEB DESIGN
 ------------------------- */
 
+
+@media only screen and (width >= 700px) {
+
+  .flip_container {
+    width: 30px;
+    height: 30px;
+  }
+
+}
 @media only screen and (width >= 800px) {
 
   .main_header_name h1 {
@@ -141,11 +150,6 @@
 
   .main_header_name h3 {
     font-size: 25px;
-  }
-
-  .flip_container {
-    width: 30px;
-    height: 30px;
   }
 
 }

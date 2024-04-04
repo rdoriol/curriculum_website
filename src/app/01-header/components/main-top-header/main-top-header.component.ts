@@ -17,7 +17,7 @@ export class MainTopHeaderComponent {
     // of type any for avoid duplicate code from interface definition Curriculum Vitae
   public cvRobertoChild: any = { }
 
-    // Se almacena una posible variable de sesión para controlar modo ligth/dark
+    // Se almacena una variable de sesión para controlar modo ligth/dark
   public lightMode: any = sessionStorage.getItem("mode");
 
     // Método que cambiará el modo de visualización de la web (modo light/dark)
@@ -38,15 +38,20 @@ export class MainTopHeaderComponent {
     }
   }
 
+    // attribute to control TopHeader´s scroll
+  public scrollTopHeader: boolean = false;
+
     // Se añade directiva de escucha para evento de tipo scroll
   @HostListener("window:scroll", ["$event"])
-  onPepe(event: Scroll) {
+  onShow(event: Scroll) {
 
     if(window.scrollY >= 50) {
-      document.getElementsByClassName("top_header_name")[0].setAttribute("style", "display: inline-block");
+      // document.getElementsByClassName("top_header_name")[0].setAttribute("style", "display: inline-block;)");
+      this.scrollTopHeader = true;
       }
       else {
-      document.getElementsByClassName("top_header_name")[0].removeAttribute("style");
+      // document.getElementsByClassName("top_header_name")[0].removeAttribute("style");
+      this.scrollTopHeader = false;
       }
   }
 
