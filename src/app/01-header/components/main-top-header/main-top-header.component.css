@@ -23,7 +23,7 @@
   -------------*/
 .item_main_top_header .tooltip_content {
   top: 45px;
-  left: 12px;
+  left: 30px;
 }
 
 .email_top_header .email_tooltip_content {
@@ -109,11 +109,14 @@
   /* RESPONSIVE WEB DESIGN
   ------------------------*/
 
-  @media(width <=  800px) {
+  @media(width <= 900px) {
 
     .main_top_header {
       justify-content: space-between;
     }
+  }
+
+  @media(width <=  800px) {
 
     .email_top_header .email_tooltip_content {
       top: 37px;
@@ -125,12 +128,11 @@
       width: 150px;
     }
 
-    .light_dark_mode .dark_mode, .light_dark_mode .light_mode {
+    .light_dark_mode:hover .dark_mode, .light_dark_mode:hover .light_mode {
       display: flex;
       justify-content: end;
       width: 142px;
     }
-
 
     .light_dark_mode .light_mode {
       width: 135px;

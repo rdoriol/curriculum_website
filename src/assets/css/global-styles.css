@@ -14,9 +14,8 @@
 
   /* Fonts Families */
   --museoModerno: "MuseoModerno", sans-serif;
-  --edu: "Edu NSW ACT Foundation", cursive;
-
-
+  --roboto: "Roboto", sans-serif; /* no convence */
+  --lexend: "Lexend", sans-serif;
 }
 /* GLOBALS
 -----------*/

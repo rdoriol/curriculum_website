@@ -3,10 +3,11 @@
     <span class="tooltip_content email_tooltip_content">Contacta conmigo</span>
     <a href="#">
       <img class="email_blue" src="../assets/icons/social-icons/email-blue-64x64.png" alt="email_image">
-      <span *ngIf="!scrollTopHeader"> {{ cvRobertoChild.media.email }} </span>
+      <span *ngIf="screenWidht >= 500 || windowScroll < 50"> {{ cvRobertoChild.media.email }} </span>
+      <span *ngIf="screenWidht >= 400 && screenWidht <= 499 && windowScroll > 50"> Contactar </span>
     </a>
   </div>
-  <div class="item_main_top_header top_header_name" *ngIf="scrollTopHeader">
+  <div class="item_main_top_header top_header_name" *ngIf="windowScroll >= 50">
     <a href="../index.html"><span class="name">r</span>oberto<span class="name">d</span>íaz<span class="name">o</span>riol</a>
   </div>
   <div class="item_main_top_header light_dark_mode" (click)="changeMode()">
@@ -17,6 +18,3 @@
     <img id="icon_mode" src="../assets/icons/sun-blue-64x64.png">
   </div>
 </div>
-
-
-

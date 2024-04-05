@@ -2,6 +2,7 @@ import { Component, Input, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Scroll } from '@angular/router';
 
+
 @Component({
   selector: 'app-main-top-header',
   standalone: true,
@@ -39,22 +40,21 @@ export class MainTopHeaderComponent {
   }
 
     // attribute to control TopHeader´s scroll
-  public scrollTopHeader: boolean = false;
+  public windowScroll: number = 0;
 
-    // Se añade directiva de escucha para evento de tipo scroll
+    // Added listening directive to handle scroll event
   @HostListener("window:scroll", ["$event"])
-  onShow(event: Scroll) {
-
-    if(window.scrollY >= 50) {
-      // document.getElementsByClassName("top_header_name")[0].setAttribute("style", "display: inline-block;)");
-      this.scrollTopHeader = true;
-      }
-      else {
-      // document.getElementsByClassName("top_header_name")[0].removeAttribute("style");
-      this.scrollTopHeader = false;
-      }
+  async onScroll(event: Scroll) {
+    this.windowScroll = window.scrollY;
   }
 
+    // attribute to control width screen
+  public screenWidht: number = window.innerWidth;
+    // Added listener directive to handle resize event
+  @HostListener("window:resize", ["$event.target.innerWidth"])
+  async onResize(width: number) {
+    this.screenWidht = width;
+  }
 
 
 }   // fin de la clase
