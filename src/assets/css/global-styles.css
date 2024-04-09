@@ -75,3 +75,132 @@ ul {
 .tooltip_content a {
   color: #000;
 }
+
+
+/* SECTIONS
+--------------*/
+.icon_title_section {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 15px;
+  padding: 25px;
+  padding-bottom: 5px;
+}
+
+.icon_title_section img {
+  width: 45px;
+  height: 45px;
+}
+
+.icon_title_section .title_section {
+  font-family: var(--museoModerno);
+  color: var(--blueElectric);
+  display: contents;
+  font-size: 26px;
+}
+
+.subsection {
+  background-color: var(--blackCarbon);
+  box-shadow: 5px 5px 5px 5px var(--black);
+  font-family: var(--lexend);
+  font-weight: 200;
+  line-height: 25px;
+  padding: 25px;
+  padding-top: 1px;
+}
+
+.highlight {
+  color: var(--blueElectric);
+  font-weight: 600;
+}
+
+/* SECTIONS - RESPONSIVE WEB DESIGN
+------------------------------------ */
+
+@media only screen and (width >= 700px) {
+
+  .icon_title_section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .subsection {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (width >= 800px) {
+
+  .icon_title_section {
+    width: 70%;
+  }
+
+  .subsection {
+    width: 70%;
+  }
+}
+
+@media only screen and (width >= 900px) {
+
+  .icon_title_section {
+    width: 65%;
+  }
+
+  .subsection {
+    width: 65%;
+  }
+}
+
+@media only screen and (width >= 1024px) {
+
+  .icon_title_section {
+    width: 50%;
+  }
+
+  .subsection {
+    width: 50%;
+  }
+}
+
+
+
+
+
+/*
+.icon_title_section {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+  padding: 10px 25px;
+  margin-top: 35px;
+}
+
+.icon_title_section img {
+  width: 40px;
+  height: 40px;
+}
+.icon_title_section .title_section {
+  font-family: var(--museoModerno);
+  color: var(--blueElectric);
+  display: contents;
+}
+
+.subsection {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--blackCarbon);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 5px var(--black);
+  font-family: var(--lexend);
+  font-weight: 200;
+
+  line-height: 25px;
+  padding: 25px;
+  color: var(--whiteDark);
+}
+*/

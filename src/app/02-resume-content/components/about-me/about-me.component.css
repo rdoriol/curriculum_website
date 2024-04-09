@@ -1,74 +1,61 @@
-.title_section {
-
-  font-family: var(--museoModerno);
-  color: var(--blueElectric);
-  margin: 0 auto;
-  margin-top: 60px;
-  width: 50%;
-  padding: 10px;
-  font-size: 30px;
-
-
+.download_button {
+  margin-top: 30px;
+  transition: 0.5s;
+  position: relative;
 }
 
-.subsection {
-  width: 50%;
-  margin: 0 auto;
-  background-color: var(--blackCarbon);
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px var(--black);
-  font-family: var(--lexend);
-  font-weight: 250;
-  line-height: 25px;
-  padding: 25px;
-  color: var(--whiteDark);
-
-/*
-  width: 50%;
-    margin: 0 auto;
-    background-color: var(--blackCarbon);
-    border-radius: 5px;
-
-    font-family: var(--lexend);
-    font-weight: 250;
-    line-height: 25px;
-    padding: 25px;
-    color: var(--whiteDark);
-
-    background-color: rgb(48 47 46);
-*/
-
-}
-
-span {
-  color: var(--blueElectric);
-  font-weight: 600;
-}
-
-button {
-  padding: 5px;
-  border-radius: 4px;
+.download_button a {
   background-color: var(--blueElectric);
-  outline: none;
-  border: none;
-  transition: 0.4s;
-  /*box-shadow: 0px 1px 1px 1px var(--black); */
+  color: var(--black);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px 3px;
+  border: 1px solid var(--black);
+  border-radius: 3px;
+  transition: 0.5s;
+  width: 300px;
 }
 
-.resaltar {
+.download_button a .highlight {
   color: var(--whiteDark);
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
-button:hover {
+.download_button img {
+  width: 30px;
+  height: 30px;
+}
+
+.download_button a .highlight::after {
+  content: "";
+  width: 0;
+  display: block;
+  height: 0.5px;
+  background: var(--whiteDark);
+  transition: 0.5s;
+}
+
+.download_button a:hover .highlight::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.download_button a:hover {
   cursor: pointer;
-  background-color: var(--yellow);
-  box-shadow: 0px 1px 1px 1px var(--black);
-  background-color: var(--black);
- /* color: var(--whiteDark); */
-  background-color: var(--yellow);
+  opacity: 0.4;
+  transition: .5s;
 }
 
-button:hover .resaltar {
- /*  color: var(--blueElectric); */
+.download_tooltip_content {
+  position: absolute;
+  top: 46px;
+  left: calc(50% - 67px);
+  padding: 1px;
+}
+
+.download_button a:hover ~ .download_tooltip_content {
+  display: block;
 }
