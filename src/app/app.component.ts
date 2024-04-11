@@ -44,11 +44,20 @@ export class AppComponent {
 public mainLoad = () => {
   let icon = document.getElementById("icon_mode");
 
-  if(sessionStorage.getItem("mode") == "light") {
+/*  if(sessionStorage.getItem("mode") == "light") {
+
     document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
     icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
   }
+  else {
+    document.getElementsByTagName("link")[3].setAttribute("href", '#');
+    icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
+  }*/
+
+  document.addEventListener("DOMContentLoaded", () => { console.log("hola caracola");})
+
 };
+
 
 }
 

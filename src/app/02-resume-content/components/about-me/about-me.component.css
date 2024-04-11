@@ -1,6 +1,6 @@
 .download_button {
   margin-top: 30px;
-  transition: 0.5s;
+  transition: 0.4s;
   position: relative;
 }
 
@@ -15,13 +15,13 @@
   padding: 5px 3px;
   border: 1px solid var(--black);
   border-radius: 3px;
-  transition: 0.5s;
+  transition: 0.4s;
   width: 300px;
 }
 
 .download_button a .highlight {
   color: var(--whiteDark);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .download_button img {
@@ -35,18 +35,18 @@
   display: block;
   height: 0.5px;
   background: var(--whiteDark);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .download_button a:hover .highlight::after {
   width: 100%;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .download_button a:hover {
   cursor: pointer;
   opacity: 0.4;
-  transition: .5s;
+  transition: 0.4s;
 }
 
 .download_tooltip_content {

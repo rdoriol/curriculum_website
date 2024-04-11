@@ -19,7 +19,8 @@ export class MainTopHeaderComponent {
   public cvRobertoChild: any = { }
 
     // Se almacena una variable de sesión para controlar modo ligth/dark
-  public lightMode: any = sessionStorage.getItem("mode");
+  //public lightMode: any = sessionStorage.getItem("mode");
+   public lightMode: any = "dark";
 
     // Método que cambiará el modo de visualización de la web (modo light/dark)
   public changeMode() {
@@ -41,10 +42,9 @@ export class MainTopHeaderComponent {
 
     // attribute to control TopHeader´s scroll
   public windowScroll: number = 0;
-
     // Added listening directive to handle scroll event
   @HostListener("window:scroll", ["$event"])
-  async onScroll(event: Scroll) {
+    async onScroll(event: Scroll) {
     this.windowScroll = window.scrollY;
   }
 
@@ -52,12 +52,12 @@ export class MainTopHeaderComponent {
   public screenWidht: number = window.innerWidth;
     // Added listener directive to handle resize event
   @HostListener("window:resize", ["$event.target.innerWidth"])
-  async onResize(width: number) {
+    async onResize(width: number) {
     this.screenWidht = width;
   }
 
 
-}   // fin de la clase
+}   // End Class
 
 
 
@@ -67,13 +67,8 @@ export class MainTopHeaderComponent {
     // evento para suscribir addEventListener
   ngOnInit(): void {
     window.addEventListener("scroll",  () => {
+        this.windowScroll = window.scrollY;
 
-      if(window.scrollY >= 50) {
-      document.getElementsByClassName("top_header_name")[0].setAttribute("style", "display: inline-block");
-      }
-      else {
-      document.getElementsByClassName("top_header_name")[0].removeAttribute("style");
-      }
     });
   }
     // evento para des-suscribir addEventListener

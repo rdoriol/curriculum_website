@@ -1,4 +1,37 @@
-body {
-  background-color: var(--whiteDarkProxya);
+/* LIGHT MODE
+-------------- */
+
+html, body {
+  background-color: var(--whiteDarkLight);
+  background-color: red;
+
 }
 
+.subsection {
+  background-color: var(--whiteDark);
+  box-shadow: none;
+  font-weight: 400;
+  color: var(--black);
+}
+
+
+
+
+
+
+
+
+/* DARK MODE            ELIMINAR
+-------------- */
+/*
+body {
+  background-color: var(--blackBody);
+}
+
+.subsection {
+  background-color: var(--blackCarbon);
+  box-shadow: 5px 5px 5px 5px var(--black);
+  font-weight: 200;
+  color: var(--whiteDark);
+}
+*/

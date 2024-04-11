@@ -1,3 +1,17 @@
+/* DARK MODE
+-------------- */
+
+html {
+  background-color: var(--blackBody);
+}
+
+.subsection {
+  /*background-color: var(--blackCarbon);
+  box-shadow: 5px 5px 5px 5px var(--black);
+  font-weight: 200;
+  color: var(--whiteDark); */
+}
+
 :root {
   /* Backgrounds Colors*/
   --blackBody: #1e2129;
@@ -19,9 +33,9 @@
 
 /* GLOBALS
 -----------*/
-html, body {
+html {
   box-sizing: border-box;
-  background-color: var(--blackBody);
+  /*background-color: var(--blackBody);*/
   color: var(--whiteDark);
   height: 5000px;
 }
@@ -165,3 +179,4 @@ ul {
     width: 50%;
   }
 }
+
