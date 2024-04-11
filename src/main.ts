@@ -7,3 +7,4 @@ bootstrapApplication(AppComponent, appConfig)
 
 
 
+const prueba: string = "prueba desde main.ts";

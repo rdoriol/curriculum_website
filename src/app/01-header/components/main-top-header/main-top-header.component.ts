@@ -19,22 +19,22 @@ export class MainTopHeaderComponent {
   public cvRobertoChild: any = { }
 
     // Se almacena una variable de sesión para controlar modo ligth/dark
-  //public lightMode: any = sessionStorage.getItem("mode");
-   public lightMode: any = "dark";
+  public lightMode: any = sessionStorage.getItem("mode");
+  // public lightMode: any = "dark";
 
     // Método que cambiará el modo de visualización de la web (modo light/dark)
   public changeMode() {
     let icon = document.getElementById("icon_mode");
 
-    if(this.lightMode == "dark") {
+    if(this.lightMode == "dark" || this.lightMode == null) {
       icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
-      document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
+      document.getElementsByTagName("link")[2].setAttribute("href", './assets/css/light-mode-styles.css');
       sessionStorage.setItem("mode", "light");
       this.lightMode = "light";
     }
     else {
       icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
-      document.getElementsByTagName("link")[3].setAttribute("href", '#');
+      document.getElementsByTagName("link")[2].setAttribute("href", './assets/css/dark-mode-styles.css');
       sessionStorage.setItem("mode", "dark");
       this.lightMode = "dark";
     }
@@ -57,22 +57,4 @@ export class MainTopHeaderComponent {
   }
 
 
-}   // End Class
-
-
-
-  // PRUEBAS eliminar
-
-  /*
-    // evento para suscribir addEventListener
-  ngOnInit(): void {
-    window.addEventListener("scroll",  () => {
-        this.windowScroll = window.scrollY;
-
-    });
-  }
-    // evento para des-suscribir addEventListener
-  ngOnDestroy(): void {
-    window.removeEventListener("scroll", this.ngOnInit);
-  }
-  */
+}   // End class

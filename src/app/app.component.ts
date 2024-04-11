@@ -40,25 +40,20 @@ export class AppComponent {
     extras: this.cvJson.extras
   }
 
-// Se comprueba si hay alguna variable de sesión almacenada para aplicar modo light o dark
-public mainLoad = () => {
-  let icon = document.getElementById("icon_mode");
+    // check stored mode type in session variable. Change type light/dark icons
+  public mainLoad = () => {
 
-/*  if(sessionStorage.getItem("mode") == "light") {
+    let icon = document.getElementById("icon_mode");
 
-    document.getElementsByTagName("link")[3].setAttribute("href", './assets/css/light-mode-styles.css');
-    icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
-  }
-  else {
-    document.getElementsByTagName("link")[3].setAttribute("href", '#');
-    icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
-  }*/
-
-  document.addEventListener("DOMContentLoaded", () => { console.log("hola caracola");})
-
-};
+    if(sessionStorage.getItem("mode") == "light") {
+      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
+    }
+    else {
+      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
+    }
+  };
 
 
-}
+}   // End class
 
 
