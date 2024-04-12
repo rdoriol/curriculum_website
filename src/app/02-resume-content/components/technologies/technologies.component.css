@@ -1,0 +1,30 @@
+.subsection {
+
+}
+
+.item_subsection {
+  background-color: var(--blackLight);
+  margin-top: 23px;
+  border-radius: 5px;
+}
+
+.item_subtitle {
+  font-family: var(--museoModerno);
+  color: var(--blueElectric);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.item_subtitle img {
+  width: 25px;
+  height: 25px;
+
+}
+
+.item_subsection .item_subtitle {
+
+}
+
+

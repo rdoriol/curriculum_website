@@ -3,6 +3,7 @@
   --blackBody: #1e2129;
   --black: #111317;
   --blackCarbon: #3C3E44;
+  --blackLight: #33363d;
 
   /* Fonts Colors */
   --whiteDark: #F5F5F5;
@@ -42,7 +43,6 @@ ul {
 
 /* ANIMATIONS
 --------------*/
-
 @keyframes fadeIn {   /* animation fade */
   0% { opacity: 0 }
   100% { opacity: 1 }
@@ -79,6 +79,10 @@ ul {
 
 /* SECTIONS
 --------------*/
+section {
+  margin-bottom: 75px;
+}
+
 .icon_title_section {
   display: flex;
   align-items: center;

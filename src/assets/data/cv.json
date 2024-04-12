@@ -5,24 +5,76 @@
     "location": "Sevilla, España",
     "media": {
         "email": "rdoriol@gmail.com",
-        "cv": "../data/CV_Roberto_Diaz_Oriol.json",
+        "cv": "../assets/data/CV_Roberto_Díaz_Oriol_g.pdf",
         "github": "https://github.com/rdoriol",
         "linkedin": "https://www.linkedin.com/in/robertodiazoriol"
     },
     "about": "Técnico Superior en Desarrollo de Aplicaciones Web, en continua formación para aumentar mis conocimientos en Backend & Full Stack. Busco mi oportunidad para desarrollar mi carrera profesional como Desarrollador Web | Desarrollador de Software | Analista de Datos.",
     "technologies": [
-        {
-            "icon": "icono de prueba",
-            "name": "Tecnología nº1"
-        },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Tecnología nº2"
-        },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Tecnología nº3"
-        }
+      {
+        "frontend": [
+          {
+            "icon": "icon",
+            "name": "frontend nº1"
+          },
+          {
+            "icon": "icon",
+            "name": "frontend nº2"
+          },
+          {
+            "icon": "icon",
+            "name": "frontend nº3"
+          }
+        ]
+      },
+      {
+        "backend": [
+          {
+            "icon": "icon",
+            "name": "backend nº1"
+          },
+          {
+            "icon": "icon",
+            "name": "backend nº2"
+          },
+          {
+            "icon": "icon",
+            "name": "backend nº3"
+          }
+        ]
+      },
+      {
+        "database": [
+          {
+            "icon": "icon",
+            "name": "database nº1"
+          },
+          {
+            "icon": "icon",
+            "name": "database nº2"
+          },
+          {
+            "icon": "icon",
+            "name": "database nº3"
+          }
+        ]
+      },
+      {
+        "knowledges": [
+          {
+            "icon": "icon",
+            "name": "knowledges nº1"
+          },
+          {
+            "icon": "icon",
+            "name": "knowledges nº2"
+          },
+          {
+            "icon": "icon",
+            "name": "knowledges nº3"
+          }
+        ]
+      }
     ],
     "experience": [
         {
