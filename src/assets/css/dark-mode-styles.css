@@ -9,5 +9,14 @@ html, body {
   background-color: var(--blackCarbon);
   box-shadow: 5px 5px 5px 5px var(--black);
   font-weight: 200;
-  /*color: var(--whiteDark);*/
 }
+
+.item_subsection {
+  background-color: var(--blackLight);
+}
+
+
+
+
+
+

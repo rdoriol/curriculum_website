@@ -20,20 +20,19 @@ export class MainTopHeaderComponent {
 
     // Se almacena una variable de sesión para controlar modo ligth/dark
   public lightMode: any = sessionStorage.getItem("mode");
-  // public lightMode: any = "dark";
 
     // Método que cambiará el modo de visualización de la web (modo light/dark)
   public changeMode() {
     let icon = document.getElementById("icon_mode");
 
     if(this.lightMode == "dark" || this.lightMode == null) {
-      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
+      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
       document.getElementsByTagName("link")[2].setAttribute("href", './assets/css/light-mode-styles.css');
       sessionStorage.setItem("mode", "light");
       this.lightMode = "light";
     }
     else {
-      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
+      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
       document.getElementsByTagName("link")[2].setAttribute("href", './assets/css/dark-mode-styles.css');
       sessionStorage.setItem("mode", "dark");
       this.lightMode = "dark";

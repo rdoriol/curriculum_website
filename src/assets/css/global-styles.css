@@ -22,7 +22,6 @@
 -----------*/
 html, body {
   box-sizing: border-box;
-  /*background-color: var(--blackBody);*/
   color: var(--whiteDark);
   height: 5000px;
 }
@@ -80,7 +79,7 @@ ul {
 /* SECTIONS
 --------------*/
 section {
-  margin-bottom: 75px;
+  margin-bottom: 25px;
 }
 
 .icon_title_section {
@@ -99,15 +98,11 @@ section {
 
 .icon_title_section .title_section {
   font-family: var(--museoModerno);
-  color: var(--blueElectric);
   display: contents;
   font-size: 26px;
 }
 
 .subsection {
-  /*background-color: var(--blackCarbon);
-  box-shadow: 5px 5px 5px 5px var(--black);
-  font-weight: 200;*/
   font-family: var(--lexend);
   line-height: 25px;
   padding: 25px;
@@ -117,6 +112,19 @@ section {
 .highlight {
   color: var(--blueElectric);
   font-weight: 600;
+}
+
+.item_subsection {
+  margin-top: 23px;
+  border-radius: 5px;
+}
+
+.item_subtitle {
+  font-family: var(--museoModerno);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
 }
 
 /* SECTIONS - RESPONSIVE WEB DESIGN

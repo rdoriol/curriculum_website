@@ -14,64 +14,88 @@
       {
         "frontend": [
           {
-            "icon": "icon",
-            "name": "frontend nº1"
+            "icon": "../assets/icons/technologies/frontend/javascript-48x48.png",
+            "name": "JavaScript"
           },
           {
-            "icon": "icon",
-            "name": "frontend nº2"
+            "icon": "../assets/icons/technologies/frontend/angular-48x48.png",
+            "name": "Framework Angular"
           },
           {
-            "icon": "icon",
-            "name": "frontend nº3"
+            "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+            "name": "CSS"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
+            "name": "Framework Bootstrap"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/html-48x48.png",
+            "name": "HTML"
           }
         ]
       },
       {
         "backend": [
           {
-            "icon": "icon",
-            "name": "backend nº1"
+            "icon": "../assets/icons/technologies/backend/python-48x48.png",
+            "name": "Python"
           },
           {
-            "icon": "icon",
-            "name": "backend nº2"
+            "icon": "../assets/icons/technologies/backend/fastapi-48x48.png",
+            "name": "Framework FastAPI"
           },
           {
-            "icon": "icon",
-            "name": "backend nº3"
+            "icon": "../assets/icons/technologies/backend/java94x94.png",
+            "name": "Java"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/php-64x64.png",
+            "name": "PHP"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/typescript-48x48.png",
+            "name": "TypeScript"
           }
         ]
       },
       {
         "database": [
           {
-            "icon": "icon",
-            "name": "database nº1"
+            "icon": "../assets/icons/technologies/database/sql-23x23.png",
+            "name": "Lenguaje SQL"
           },
           {
-            "icon": "icon",
-            "name": "database nº2"
+            "icon": "../assets/icons/technologies/database/my-sql-48x48.png",
+            "name": "MySQL"
           },
           {
-            "icon": "icon",
-            "name": "database nº3"
+            "icon": "../assets/icons/technologies/database/oracle-48x48.png",
+            "name": "Oracle"
+          },
+          {
+            "icon": "../assets/icons/technologies/database/mongodb-23x23.png",
+            "name": "MongoDB"
           }
         ]
       },
       {
         "knowledges": [
           {
-            "icon": "icon",
-            "name": "knowledges nº1"
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Patrón MVC"
           },
           {
-            "icon": "icon",
-            "name": "knowledges nº2"
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Patrones de Diseño Software"
           },
           {
-            "icon": "icon",
-            "name": "knowledges nº3"
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Api Rest"
+          },
+          {
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Git, GitHub"
           }
         ]
       }

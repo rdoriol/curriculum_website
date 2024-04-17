@@ -7,16 +7,17 @@
 .download_button a {
   background-color: var(--blueElectric);
   color: var(--black);
+  font-size: 14px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 5px 3px;
+  padding: 2px 0px;
   border: 1px solid var(--black);
   border-radius: 3px;
   transition: 0.4s;
-  width: 300px;
+  width: 260px;
 }
 
 .download_button a .highlight {

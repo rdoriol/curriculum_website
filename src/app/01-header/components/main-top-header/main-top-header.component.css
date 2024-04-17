@@ -90,10 +90,11 @@
 
 .light_dark_mode .dark_mode,
 .light_dark_mode .light_mode {
-  display: none;
+  /*display: none; */  /*todo eliminar más adelante */
 }
 
-.light_dark_mode .dark_mode img, .light_dark_mode .light_mode img {
+.light_dark_mode .dark_mode img,
+.light_dark_mode .light_mode img {
  display: none;
 }
 
