@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
 import * as cvJson from '../assets/data/cv.json';   // import to work with JSON files
 
 import { MainHeaderComponent } from './01-header/components/main-header/main-header.component';
@@ -13,10 +14,17 @@ import { MainFormComponent } from './04-form/components/main-form/main-form.comp
 
 import { CurriculumVitae } from './05-interfaces/curr-vitae.interface';
 
+// import { NgxGalleryModule } from 'ngx-gallery';
+// import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MainTopHeaderComponent, SecondaryTopHeaderComponent, MainHeaderComponent, SecondaryHeaderComponent, MainFooterComponent, SecondaryFooterComponent, ResumePageComponent, MainFormComponent],
+  imports: [
+    RouterOutlet, MainTopHeaderComponent, SecondaryTopHeaderComponent, MainHeaderComponent,
+    SecondaryHeaderComponent, MainFooterComponent, SecondaryFooterComponent, ResumePageComponent,
+    MainFormComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
