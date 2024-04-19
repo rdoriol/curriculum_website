@@ -21,7 +21,7 @@
 /* TECHNOLOGIES SUBSECTIONS - RESPONSIVE WEB DESIGN
 --------------------------------------------------- */
 
-@media only screen and (width >= 700px) {
+@media only screen and (width >= 450px) {
 
   .subsection {
     display: grid;

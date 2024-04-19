@@ -19,7 +19,7 @@
           },
           {
             "icon": "../assets/icons/technologies/frontend/angular-48x48.png",
-            "name": "Framework Angular"
+            "name": "Angular"
           },
           {
             "icon": "../assets/icons/technologies/frontend/css-48x48.png",
@@ -27,7 +27,7 @@
           },
           {
             "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
-            "name": "Framework Bootstrap"
+            "name": "Bootstrap"
           },
           {
             "icon": "../assets/icons/technologies/frontend/html-48x48.png",
@@ -43,7 +43,7 @@
           },
           {
             "icon": "../assets/icons/technologies/backend/fastapi-48x48.png",
-            "name": "Framework FastAPI"
+            "name": "FastAPI"
           },
           {
             "icon": "../assets/icons/technologies/backend/java94x94.png",
@@ -119,6 +119,59 @@
     "projects": [
         {
             "icon": "box-select",
+            "title": "LD SoftGestión",
+            "subtitle": "Sistema ERP",
+            "description": "Desarrollo Full Stack de Sistema ERP integrado en Aplicación Web.",
+            "technologies": [
+                {
+                    "icon": "../assets/icons/technologies/backend/php-64x64.png",
+                    "name": "PHP"
+                },
+                {
+                    "icon": "../assets/icons/technologies/database/my-sql-48x48.png",
+                    "name": "MySQL"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/javascript-48x48.png",
+                  "name": "JavaScript"
+              },
+              {
+                "icon": "../assets/icons/technologies/frontend/Jquery-48x48.png",
+                "name": "jQuery"
+              },
+              {
+                "icon": "../assets/icons/technologies/ajax-48x48.png",
+                "name": "AJAX"
+              },
+              {
+                "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+                "name": "CSS"
+              },
+              {
+                "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
+                "name": "Bootstrap"
+              },
+              {
+                "icon": "../assets/icons/technologies/frontend/html-48x48.png",
+                "name": "HTML"
+              },
+              {
+                "icon": "../assets/icons/technologies/code-48x48.png",
+                "name": "Patrón MVC"
+              }
+            ],
+            "images": [
+              "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png",
+              "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png",
+              "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png",
+              "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png",
+              "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
+            ],
+            "url": "https://www.youtube.com/watch?v=1mwG8beKqGA",
+            "github": "https://github.com/rdoriol/ld_soft_management"
+        },
+        {
+            "icon": "box-select",
             "title": "Título",
             "subtitle": "Subtítulo",
             "description": "Descripción",
@@ -132,7 +185,7 @@
                     "name": "Tecnología"
                 }
             ],
-            "image": "/favicon.ico",
+            "images": "/favicon.ico",
             "url": "https://google.com",
             "github": "https://github.com"
         },
@@ -151,26 +204,7 @@
                     "name": "Tecnología"
                 }
             ],
-            "image": "/favicon.ico",
-            "url": "https://google.com",
-            "github": "https://github.com"
-        },
-        {
-            "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
-            "description": "Descripción",
-            "technologies": [
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                },
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                }
-            ],
-            "image": "/favicon.ico",
+            "images": "/favicon.ico",
             "url": "https://google.com",
             "github": "https://github.com"
         }

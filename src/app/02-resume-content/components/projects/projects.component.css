@@ -1,0 +1,124 @@
+.projects {
+
+}
+
+.projects .item_subsection {
+  padding: 0 15px;
+}
+
+.projects .item_subsection .item_subtitle {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0;
+}
+
+.projects .item_subsection .item_subtitle h3 {
+  margin-bottom: 7px;
+}
+
+.projects .item_subsection .item_subtitle h4 {
+  color: var(--blueElectric);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.projects .item_subsection  p ~ h4 {
+  border-bottom: 1px solid;
+  width: 182px;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.projects .item_subsection ul {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.projects ul li {
+  font-size: 15px;
+  position: relative;
+}
+
+.icon_name {
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.icon_name img {
+  width: 23px;
+  height: 23px;
+}
+
+.projects p {
+  font-size: 15px;
+}
+
+#project_link {
+width: 133px;
+}
+
+.projects .item_subsection .social_list {
+  display: inline-flex;
+  column-gap: 15px;
+}
+
+/* FLIPPER EFECT
+-----------------*/
+
+.flip_container {
+  perspective: 1000px;
+  width: 30px;
+  height: 30px;
+}
+
+.flipper {
+  position: relative;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  height: 30px;
+}
+
+.front_icon, .back_icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+.front_icon {
+  transform: rotateY(0deg);
+}
+
+.back_icon {
+  transform: rotateY(180deg);
+}
+
+.projects .item_subsection .social_list li:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* TOOLTIP CONTENT
+-------------------*/
+
+.projects .item_subsection .social_list li:hover .url_tooltip_content,
+.projects .item_subsection .social_list li:hover .github_tooltip_content {
+  display: block;
+}
+
+.projects .item_subsection .social_list li .url_tooltip_content {
+  width: max-content;
+  padding: 0 3px;
+  position: absolute;
+  top: 39px;
+}
+
+.projects .item_subsection .social_list li .github_tooltip_content {
+  width: max-content;
+  padding: 0 3px;
+  position: absolute;
+  top: 39px;
+}
