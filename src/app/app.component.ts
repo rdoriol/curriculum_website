@@ -14,9 +14,6 @@ import { MainFormComponent } from './04-form/components/main-form/main-form.comp
 
 import { CurriculumVitae } from './05-interfaces/curr-vitae.interface';
 
-// import { NgxGalleryModule } from 'ngx-gallery';
-// import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
-
 @Component({
   selector: 'app-root',
   standalone: true,
