@@ -5,7 +5,7 @@
 
 <div class="subsection projects">
 
-  <div class="item_subsection" *ngFor="let item of cvRobertoChild.projects">
+  <div class="item_subsection" *ngFor="let item of cvRobertoChild.projects; let indexProject = index">
 
     <div class="item_subtitle">
       <h3>{{ item.title }}</h3>
@@ -44,18 +44,40 @@
               <img class="back_icon" src="../assets/icons/social-icons/github-circle-blue-electric2-64x64.png">
             </div>    <!-- End .flip -->
           </div>    <!-- End .flip_container -->
-
         </a>
       </li>
     </ul>
+            <!-- CAROUSEL
+            -------------->
+    <div class="carousel_container" *ngFor="let image of item.images; let indexImage = index;">
+      <div class="carousel open_modal" *ngIf="indexImage == indexActualImage">
+        <img id="carousel_image" src="{{ image }}" (click)="openModal('modal_images')"
+          alt="carousel_images">
+        <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
+          <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
+        </button>
+        <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
+          <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
+        </button>
+      </div>    <!--  End .carousel -->
+    </div>    <!--  End .carousel_container -->
 
-
-<!--
-    <div class="carousel" *ngFor="let image of item.images">
-  <img src="#">
-</div>
--->
-
+          <!-- MODAL
+          ----------->
+    <div class="modal_container" id="modal_images">
+      <div class="modal">
+        <img id=""  src="{{ item.images[indexActualImage] }}" alt="carousel_images">
+        <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
+          <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
+        </button>
+        <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
+          <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
+        </button>
+        <button type="button" class="close" (click)="closeModal('modal_images')">
+          <img class="closeicon" src="../assets/icons/close-white-50x50.png" alt="arrow_right_icon">
+        </button>
+      </div>    <!-- End .modal -->
+    </div>    <!-- End .modal_container -->
 
   </div>    <!--  End .item_subsection -->
 
