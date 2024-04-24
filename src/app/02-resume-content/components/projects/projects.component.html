@@ -1,4 +1,4 @@
-<div class="icon_title_section">
+d<div class="icon_title_section">
 <img src="../assets/icons/sections-titles/projects-50x50.png" alt="proyectos_icon">
   <h2 class="title_section">Proyectos</h2>
 </div>    <!-- End .icon_title_section -->
@@ -51,14 +51,19 @@
             -------------->
     <div class="carousel_container" *ngFor="let image of item.images; let indexImage = index;">
       <div class="carousel open_modal" *ngIf="indexImage == indexActualImage">
-        <img id="carousel_image" src="{{ image }}" (click)="openModal('modal_images')"
-          alt="carousel_images">
+        <img id="carousel_image" src="{{ image.path }}" (click)="openModal('modal_images')"alt="carousel_images">
         <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
           <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
         </button>
         <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
           <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
         </button>
+        <span class="dot"
+          *ngFor="let dot of item.images; let indexDot = index"
+          [ngClass]="{'inactive_dot' : pepe,
+                      'active_dot': pepe}">
+                      {{indexDot}} {{indexImage}}
+        </span>  <!-- dot total images -->
       </div>    <!--  End .carousel -->
     </div>    <!--  End .carousel_container -->
 
@@ -66,7 +71,7 @@
           ----------->
     <div class="modal_container" id="modal_images">
       <div class="modal">
-        <img id=""  src="{{ item.images[indexActualImage] }}" alt="carousel_images">
+        <img id=""  src="" alt="carousel_images">
         <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
           <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
         </button>

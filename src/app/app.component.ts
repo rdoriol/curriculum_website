@@ -51,10 +51,10 @@ export class AppComponent {
     let icon = document.getElementById("icon_mode");
 
     if(sessionStorage.getItem("mode") == "light") {
-      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
+      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
     }
     else {
-      icon!.setAttribute("src", "../assets/icons/moon-blue-100x100.png");
+      icon!.setAttribute("src", "../assets/icons/sun-blue-64x64.png");
     }
   };
 

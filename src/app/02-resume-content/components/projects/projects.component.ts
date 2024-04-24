@@ -25,10 +25,12 @@ export class ProjectsComponent {
     ---------------------------*/
 
   public indexActualImage:number = 0;         // Initial image with first array´s index
+  public pepe = 0;
 
     // Method to change carousel´s image
   public changeImage(indexProject:number, value:number) {
     let imageLength:number = this.cvRobertoChild.projects[indexProject].images.length;
+
       // click on left arrow
     if(value < 0) {
       if(this.indexActualImage == 0) {
@@ -42,9 +44,12 @@ export class ProjectsComponent {
       }
     }
     this.indexActualImage += value;
+    this.pepe += value;
   }
 
-    // open modal window
+   /* MODAL MANAGEMENT
+    ---------------------------*/
+
   public openModal(id:string) {
     let selector = document.getElementById(id);
     selector!.classList.add("modal_container_is_visible");

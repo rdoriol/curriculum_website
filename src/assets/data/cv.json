@@ -161,11 +161,21 @@
               }
             ],
             "images": [
-              "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png",
-              "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png",
-              "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png",
-              "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png",
-              "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
+              {
+                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png"
+              },
+              {
+                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png"
+              },
+              {
+                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png"
+              },
+              {
+                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png"
+              },
+              {
+                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
+              }
             ],
             "url": "https://www.youtube.com/watch?v=1mwG8beKqGA",
             "github": "https://github.com/rdoriol/ld_soft_management"
@@ -185,7 +195,7 @@
                     "name": "Tecnología"
                 }
             ],
-            "images": "/favicon.ico",
+            "images": [],
             "url": "https://google.com",
             "github": "https://github.com"
         },
@@ -204,7 +214,7 @@
                     "name": "Tecnología"
                 }
             ],
-            "images": "/favicon.ico",
+            "images": [],
             "url": "https://google.com",
             "github": "https://github.com"
         }
