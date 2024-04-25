@@ -13,6 +13,8 @@ import { SecondaryFooterComponent } from './03-footer/components/secondary-foote
 import { MainFormComponent } from './04-form/components/main-form/main-form.component';
 
 import { CurriculumVitae } from './05-interfaces/curr-vitae.interface';
+import { ImagesProjects } from './05-interfaces/projects-images.interface';
+
 
 @Component({
   selector: 'app-root',

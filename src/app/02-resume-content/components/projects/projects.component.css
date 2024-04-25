@@ -174,24 +174,26 @@ width: 133px;
   background-color: var(--blackCarbon);
 }
 
+.dots_container {
+  position: absolute;
+  top: 88%;
+  left: calc(50% - 55px);
+}
 .dot {
   cursor: pointer;
   width: 10px;
   height: 10px;
   background-color: var(--blackCarbon);
-  background-color: green;
+  background-color: red;
   border-radius: 50%;
   display: inline-block;
   transition: background-color .3s ease;
   margin: 0 5px;
 }
 
-.inactive_dot, .carousel_container .dot:hover {
+.active_dot, .dot:hover {
   background-color: #ffffff;
-}
-
-.active_dot {
-  background-color: red;
+  background-color: green;
 }
 
 

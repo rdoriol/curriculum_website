@@ -119,8 +119,8 @@
     "projects": [
         {
             "icon": "box-select",
-            "title": "LD SoftGestión",
-            "subtitle": "Sistema ERP",
+            "title": "Sistema ERP",
+            "subtitle": "LD SoftGestión",
             "description": "Desarrollo Full Stack de Sistema ERP integrado en Aplicación Web.",
             "technologies": [
                 {
@@ -134,56 +134,56 @@
                 {
                   "icon": "../assets/icons/technologies/frontend/javascript-48x48.png",
                   "name": "JavaScript"
-              },
-              {
-                "icon": "../assets/icons/technologies/frontend/Jquery-48x48.png",
-                "name": "jQuery"
-              },
-              {
-                "icon": "../assets/icons/technologies/ajax-48x48.png",
-                "name": "AJAX"
-              },
-              {
-                "icon": "../assets/icons/technologies/frontend/css-48x48.png",
-                "name": "CSS"
-              },
-              {
-                "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
-                "name": "Bootstrap"
-              },
-              {
-                "icon": "../assets/icons/technologies/frontend/html-48x48.png",
-                "name": "HTML"
-              },
-              {
-                "icon": "../assets/icons/technologies/code-48x48.png",
-                "name": "Patrón MVC"
-              }
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/Jquery-48x48.png",
+                  "name": "jQuery"
+                },
+                {
+                  "icon": "../assets/icons/technologies/ajax-48x48.png",
+                  "name": "AJAX"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+                  "name": "CSS"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
+                  "name": "Bootstrap"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/html-48x48.png",
+                  "name": "HTML"
+                },
+                {
+                  "icon": "../assets/icons/technologies/code-48x48.png",
+                  "name": "Patrón MVC"
+                }
             ],
             "images": [
-              {
-                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png"
-              },
-              {
-                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png"
-              },
-              {
-                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png"
-              },
-              {
-                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png"
-              },
-              {
-                "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
-              }
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
+                }
             ],
             "url": "https://www.youtube.com/watch?v=1mwG8beKqGA",
             "github": "https://github.com/rdoriol/ld_soft_management"
         },
         {
             "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
+            "title": "Website",
+            "subtitle": "Zhengda Abogados",
             "description": "Descripción",
             "technologies": [
                 {
@@ -195,14 +195,21 @@
                     "name": "Tecnología"
                 }
             ],
-            "images": [],
+            "images": [
+                {
+                  "path": "../assets/images/keyboard.jpg"
+                },
+                {
+                  "path": "../assets/images/foto-carnet.jpg"
+                }
+            ],
             "url": "https://google.com",
             "github": "https://github.com"
         },
         {
             "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
+            "title": "Portfolio Website",
+            "subtitle": "Roberto Díaz Oriol - Portfolio",
             "description": "Descripción",
             "technologies": [
                 {

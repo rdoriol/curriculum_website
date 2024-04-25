@@ -1,4 +1,4 @@
-  // All the attributes are optional. Components use different attributes from the interface definition.
+  //  Components use different attributes from the interface definition.
 export interface CurriculumVitae {
   avatar: string;
   name: string;
@@ -40,7 +40,7 @@ interface Experience {
 interface Projects {
   mainData: GeneralSubdata;
   technologies: Technologies[];
-  image: string;
+  images: string[];
   url?: string;
   github?: string;
 }
