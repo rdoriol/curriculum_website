@@ -12,7 +12,7 @@ import { ImagesProjects } from '../../../05-interfaces/projects-images.interface
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 
   constructor() {}
 
@@ -20,74 +20,73 @@ export class ProjectsComponent {
   public cvRobertoChild: any = {};
 
 
-    /* CHANGE CAROUSEL´S IMAGE
-    ---------------------------*/
-  public indexInitialImage:number = 0;         // Initial image with first array´s index
-  public indexProjectImage: ImagesProjects[] = [{
-    indexProject: 0,
-    indexImage: 0
-  }];
+    /* CHANGE CAROUSEL´S IMAGE / MODAL´S IMAGE
+    -------------------------------------------*/
+
+  public actualIndexs: ImagesProjects[] = [];
+
+  ngOnInit(): void {
+    this.saveActualIndex();
+  }
+
+    // Method to make index store
+  public saveActualIndex() {
+    for(let i = 0; i < this.cvRobertoChild.projects.length; i++) {
+      let saveIndex: ImagesProjects = {
+        indexProject: i,
+        indexImage: 0
+      }
+      this.actualIndexs.push(saveIndex);
+    }
+  }
 
     // Method to change carousel´s image
   public changeImage(indexProject:number, value:number) {
     let imageLength:number = this.cvRobertoChild.projects[indexProject].images.length;
+    this.actualIndexs[indexProject].indexProject = indexProject;
 
       // click on left arrow
-    if(value! < 0) {
-      if(this.indexInitialImage == 0) {
-        this.indexInitialImage = imageLength;
+    if(value < 0) {
+      if(this.actualIndexs[indexProject].indexImage == 0) {
+        this.actualIndexs[indexProject].indexImage = imageLength;
       }
     }
       // click on right arrow
     else {
-      if(this.indexInitialImage == imageLength - 1) {
-        this.indexInitialImage = -1;
+      if(this.actualIndexs[indexProject].indexImage == imageLength - 1) {
+        this.actualIndexs[indexProject].indexImage = -1;
       }
     }
-    this.indexInitialImage += value!;
-    console.log(this.indexInitialImage);
-
-
+    this.actualIndexs[indexProject].indexImage += value;
   }
 
     // Method to check actual dot
-  public checkDot(index:number) {
-    if(this.indexInitialImage == index) {
+  public checkDot(indexProject:number, index:number) {
+    if(this.actualIndexs[indexProject].indexImage == index) {
       return true;
     }
     return;
   }
-        // todo EXPLICAR BLOQUE
-//  public indexProjectImage: ImagesProjects[] = [];
 
-  public saveIndexs() {
-    let lengthProjects = this.cvRobertoChild.projects.length;
-    for(let i = 0; i < lengthProjects; i++ ) {
-      for(let j = 0; j < this.cvRobertoChild.projects[i].images.length; j++) {
-        let element:ImagesProjects = {
-          indexProject: i,
-          indexImage: j
-        }
-      //  this.indexProjectImage.push(element);
-      }
-    }
-    //console.log(this.indexProjectImage);
-}
+    // Method to change image when clickinh on a dot
+  public changeImageDot(indexProject:number, indexImage:number) {
+    this.actualIndexs[indexProject] = {
+      indexProject: indexProject,
+      indexImage: indexImage
+    };
+  }
 
 
     /* MODAL MANAGEMENT
-      ---------------------------*/
-  public openModal(id:string) {
-    let selector = document.getElementById(id);
+      ------------------*/
+  public openModal(idProject:number) {
+    let selector = document.getElementById(idProject.toString());
     selector!.classList.add("modal_container_is_visible");
   }
 
-  public closeModal(id:string) {
-    let selector = document.getElementById(id);
+  public closeModal(idProject:number) {
+    let selector = document.getElementById(idProject.toString());
     selector!.classList.remove("modal_container_is_visible");
   }
-
-
-
 
 } // End class

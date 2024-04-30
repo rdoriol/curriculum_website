@@ -174,7 +174,7 @@ width: 133px;
   background-color: var(--blackCarbon);
 }
 
-.dots_container {
+.carousel_container .dots_container {
   position: absolute;
   top: 88%;
   left: calc(50% - 55px);
@@ -202,10 +202,9 @@ width: 133px;
 
 .modal_container {
   width: 100%;
-  height: auto;
-  position: relative;
-  background: rgb(73 68 68 / 0.8);
-  position: fixed;
+  height: 100%;
+  background: rgb(73 68 68 /  0.8);
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -224,9 +223,9 @@ width: 133px;
 .modal {
   width: 90%;
   margin: auto;
-  position: absolute;
+  /* position: absolute;
   top: 20%;
-  left: 5%;
+  left: 5%; */
 }
 
 .modal img {
@@ -239,9 +238,9 @@ width: 133px;
 .modal_container .left_button,
 .modal_container .right_button {
   cursor: pointer;
-  position: absolute;
+  /*position: absolute;
   top: 45.5%;
-  left: 0;
+  left: 0;*/
   background-color: transparent;
   border: none;
   border-radius: 2px;
@@ -250,7 +249,7 @@ width: 133px;
 }
 
 .modal_container .right_button {
-  left: 98%;
+  /*left: 98%;*/
 }
 
 .modal_container .left_button:hover,
@@ -258,21 +257,16 @@ width: 133px;
   background-color: #000000;
 }
 
-
 .modal_container .close {
   cursor: pointer;
-  position: absolute;
-  top: 0;
+/*  position: absolute;
+  top: 0;*/
   background-color: transparent;
   border: none;
   padding: 0;
   width: 8%;
-
 }
 
-.modal_container .close:hover {
+.modal_container .dots_container {
 
 }
-
-
-
