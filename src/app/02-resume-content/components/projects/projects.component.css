@@ -183,8 +183,8 @@ width: 133px;
   cursor: pointer;
   width: 10px;
   height: 10px;
-  background-color: var(--blackCarbon);
-  background-color: red;
+  background-color: #bbb;
+  opacity: 0.4;
   border-radius: 50%;
   display: inline-block;
   transition: background-color .3s ease;
@@ -192,8 +192,8 @@ width: 133px;
 }
 
 .active_dot, .dot:hover {
-  background-color: #ffffff;
-  background-color: green;
+  background-color: #C2C2C2;
+  opacity: 1;
 }
 
 
