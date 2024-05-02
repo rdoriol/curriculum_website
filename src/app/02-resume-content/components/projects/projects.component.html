@@ -48,8 +48,8 @@
       </li>
     </ul>
 
-            <!-- CAROUSEL
-            -------------->
+          <!-- CAROUSEL
+          -------------->
     <div class="carousel_container" *ngFor="let image of item.images; let indexImage = index;">
       <div class="carousel open_modal" *ngIf="indexProject == actualIndexs[indexProject].indexProject && indexImage == actualIndexs[indexProject].indexImage">
         <img id="carousel_image" src="{{ image.path }}" (click)="openModal(indexProject)"alt="carousel_images">
@@ -61,10 +61,10 @@
         </button>
         <div class="dots_container">
           <span class="dot"
-            *ngFor="let dot of item.images; let last = last; let dotIndex = index;"
+            *ngFor="let dot of item.images; let dotIndex = index;"
             (click)="changeImageDot(indexProject, dotIndex)"
             [ngClass]="{ 'active_dot': checkDot(indexProject, dotIndex) }"
-            >
+          >
           </span>
         </div>    <!-- End .dots_container -->
       </div>    <!--  End .carousel -->
