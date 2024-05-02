@@ -23,7 +23,6 @@
 html, body {
   box-sizing: border-box;
   color: var(--whiteDark);
-  height: 5000px;
 }
 
 a {

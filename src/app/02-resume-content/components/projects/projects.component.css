@@ -26,7 +26,7 @@
 }
 
 .projects .item_subsection ul {
-  display: inline-block;
+  /* display: inline-block; */
   margin-bottom: 0;
   padding-left: 20px;
 }
@@ -34,6 +34,20 @@
 .projects ul li {
   font-size: 15px;
   position: relative;
+}
+
+.projects .item_subsection .ul_tech_project {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.projects .item_subsection .ul_tech_project li {
+  width: 109px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: var(--blackCarbon);
 }
 
 .icon_name {
@@ -153,7 +167,6 @@ width: 133px;
 .carousel_container .right_button {
   cursor: pointer;
   position: absolute;
-  /* top: 45.5%; */
   bottom: 50%;
   left: 0;
   background-color: transparent;

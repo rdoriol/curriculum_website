@@ -15,8 +15,8 @@
     <p><span class="highlight">Desarrollo Full Stack</span> de Sistema ERP integrado en Aplicación Web.</p>
 
     <h4>Tecnologías empleadas</h4>
-    <ul *ngFor="let tech of item.technologies">
-      <li class="icon_name">
+    <ul class="ul_tech_project">
+      <li class="icon_name" *ngFor="let tech of item.technologies">
         <img src="{{ tech.icon }}">
         {{ tech.name }}
       </li>
