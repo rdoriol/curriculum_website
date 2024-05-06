@@ -15,6 +15,13 @@ html, body {
   background-color: var(--blackLight);
 }
 
+/* Projects
+-----------*/
+
+.projects .item_subsection .ul_tech_project li {
+  background-color: var(--blackCarbon);
+}
+
 
 
 

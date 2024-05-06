@@ -21,7 +21,12 @@ html, body {
 }
 
 
+/* Projects
+-----------*/
 
+.projects .item_subsection .ul_tech_project li {
+  background-color: var(--whiteDarkLight);
+}
 
 
 
