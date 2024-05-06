@@ -76,15 +76,15 @@
     <div class="modal_container" id={{indexProject}}>
       <div class="modal" *ngFor="let image of item.images; let indexImage = index">
         <div class="image_container" *ngIf="indexImage == actualIndexs[indexProject].indexImage">
+          <button type="button" class="close" (click)="closeModal(indexProject)">
+            <img class="closeicon" src="../assets/icons/close-white-50x50.png" alt="close_icon">
+          </button>
           <img id=""  src="{{ image.path }}" alt="modal_images">
           <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
             <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
           </button>
           <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
             <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
-          </button>
-          <button type="button" class="close" (click)="closeModal(indexProject)">
-            <img class="closeicon" src="../assets/icons/close-white-50x50.png" alt="arrow_right_icon">
           </button>
           <div class="dots_container">
             <span class="dot"
