@@ -20,7 +20,7 @@
 
 .projects .item_subsection  p ~ h4 {
   border-bottom: 1px solid;
-  width: 182px;
+  width: max-content;
   margin-bottom: 0;
   font-size: 15px;
 }
@@ -43,7 +43,7 @@
 }
 
 .projects .item_subsection .ul_tech_project li {
-  width: 110px;
+  width: 114px;
   padding: 5px;
   border-radius: 3px;
 }

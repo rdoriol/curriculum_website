@@ -4,7 +4,6 @@
 </div>    <!-- End .icon_title_section -->
 
 <div class="subsection projects">
-
   <div class="item_subsection" *ngFor="let item of cvRobertoChild.projects; let indexProject = index">
 
     <div class="item_subtitle">
@@ -12,7 +11,7 @@
       <h4>{{ item.subtitle }}</h4>
     </div>    <!--  End .item_subtitle -->
 
-    <p><span class="highlight">Desarrollo Full Stack</span> de Sistema ERP integrado en Aplicación Web.</p>
+    <p><span class="highlight">{{ item.description_title }}</span> {{ item.description}}</p>
 
     <h4>Tecnologías empleadas</h4>
     <ul class="ul_tech_project">
@@ -72,7 +71,6 @@
 
           <!-- MODAL
           ----------->
-
     <div class="modal_container" id={{indexProject}}>
       <div class="modal" *ngFor="let image of item.images; let indexImage = index">
         <div class="image_container" *ngIf="indexImage == actualIndexs[indexProject].indexImage">

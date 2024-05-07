@@ -103,17 +103,16 @@
     "experience": [
         {
             "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
-            "description": "Descripción",
-            "date": "Años"
-        },
-        {
-            "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
-            "description": "Descripción",
-            "date": "Años"
+            "title": "Desarrollador Web",
+            "subtitle": "DPSoft Creative, S.L.",
+            "description": [
+                "Desarrollo de webs con CMS WordPress.",
+                "Maquetación de páginas Web con CSS.",
+                "Personalización de plantillas web con JavaScript, HTML, CSS.",
+                "Backend web con PHP.",
+                "Formación continua en Framework Angular."
+            ],
+            "date": "2003"
         }
     ],
     "projects": [
@@ -121,7 +120,8 @@
             "icon": "box-select",
             "title": "Sistema ERP",
             "subtitle": "LD SoftGestión",
-            "description": "Desarrollo Full Stack de Sistema ERP integrado en Aplicación Web.",
+            "description_title":"Desarrollo Full Stack",
+            "description": "de Sistema ERP integrado en Aplicación Web.",
             "technologies": [
                 {
                     "icon": "../assets/icons/technologies/backend/php-64x64.png",
@@ -184,7 +184,8 @@
             "icon": "box-select",
             "title": "Website",
             "subtitle": "Zhengda Abogados",
-            "description": "Descripción",
+            "description_title":"Desarrollo Frontend",
+            "description": "de Sitio Web apoyado en CMS WordPress.",
             "technologies": [
                 {
                     "icon": "devicon-devicon-plain",
@@ -210,7 +211,8 @@
             "icon": "box-select",
             "title": "Portfolio Website",
             "subtitle": "Roberto Díaz Oriol - Portfolio",
-            "description": "Descripción",
+            "description_title":"Desarrollo Full Stack",
+            "description": "de Sitio Web con portfolio personal creado desde cero. Así es, es este mismo sitio que estás viendo.",
             "technologies": [
                 {
                     "icon": "devicon-devicon-plain",

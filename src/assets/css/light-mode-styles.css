@@ -25,7 +25,7 @@ html, body {
 -----------*/
 
 .projects .item_subsection .ul_tech_project li {
-  background-color: var(--whiteDarkLight);
+  background-color: var(--whiteDark);
 }
 
 

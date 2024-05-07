@@ -1,0 +1,66 @@
+.experience .item_subsection {
+  padding: 0 15px;
+}
+
+.experience .item_subsection .item_subtitle {
+  display: flex;
+  flex-direction: column;
+  column-gap: 0;
+}
+
+.experience .item_subsection .item_subtitle h3 {
+  margin-bottom: 7px;
+}
+
+.experience .item_subsection .item_subtitle h4 {
+  color: var(--blueElectric);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.experience .item_subsection  .item_subtitle ~ h4 {
+  border-bottom: 1px solid;
+  width: max-content;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.experience .item_subsection ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.experience .item_subsection ul li {
+  font-size: 15px;
+  list-style: circle;
+  padding: 5px;
+}
+
+.full_experience {
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 7px;
+  margin-top: 20px;
+  background-color: var(--blackLight);
+  border-radius: 5px;
+  display: flex;
+  column-gap: 10px;
+  transition: 0.2s;
+  overflow: hidden;
+}
+
+.full_experience p {
+
+}
+
+.full_experience img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.full_experience:hover {
+  transform: scale(1.01);
+  box-shadow: 3px 2px 22px 1px black;
+}
