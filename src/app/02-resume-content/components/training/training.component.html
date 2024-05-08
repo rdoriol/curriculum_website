@@ -1,1 +1,19 @@
+<div class="icon_title_section">
+  <img src="../assets/icons/sections-titles/training-50x50.png" alt="proyectos_icon">
+    <h2 class="title_section">Formación IT</h2>
+  </div>    <!-- End .icon_title_section -->
 
+  <div class="subsection training">
+    <div class="item_subsection" *ngFor="let training of cvRobertoChild.training">
+      <div class="item_subtitle">
+        <h3>{{ training.title }}</h3>
+        <h4>{{ training.subtitle }} - {{ training.date }} <span>({{ training.description }})</span></h4>
+      </div>    <!-- End .item_subtitle -->
+    </div>    <!-- End .item_subsection -->
+
+    <div class="full_training" (click)="scrollDownload('download_cv')">
+      <img src="../assets/icons/add-48x48.png" alt="add_icon">
+      <p href="go_download_cv">Conoce mi <span class="highlight">Formación completa</span>. <strong>Descarga</strong> mi <span class="highlight">Curriculum Vitae</span></p>
+    </div>
+
+  </div>    <!-- End .subsection-->

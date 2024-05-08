@@ -28,22 +28,10 @@ html, body {
   background-color: var(--whiteDark);
 }
 
+/* Experience / Training
+------------------------*/
 
-
-
-
-
-/* DARK MODE            ELIMINAR
--------------- */
-/*
-body {
-  background-color: var(--blackBody);
+.experience .full_experience,
+.training .full_training {
+  background-color: #ffffff;
 }
-
-.subsection {
-  background-color: var(--blackCarbon);
-  box-shadow: 5px 5px 5px 5px var(--black);
-  font-weight: 200;
-  color: var(--whiteDark);
-}
-*/

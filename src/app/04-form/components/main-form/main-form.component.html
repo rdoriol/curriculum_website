@@ -1,1 +1,59 @@
+<div class="icon_title_section" id="section_contact_form">
+  <img src="../assets/icons/sections-titles/contact-form-50x50.png" alt="proyectos_icon">
+    <h2 class="title_section">Contacto</h2>
+</div>    <!-- End .icon_title_section -->
 
+<div class="subsection contact_form">
+  <div class="item_subsection">
+    <p>
+      <span class="highlight">Contacta </span>conmigo enviando un mensaje a <a href="mailto:rdoriol@gmail.com"><span class="highlight">{{ cvRobertoChild.media.email }}</span></a>.
+    </p>
+    <p>
+      O si lo prefieres, puedes cumplimentar el <span class="highlight">formulario</span> que aparece a continuación.
+    </p>
+  </div>
+
+  <form class="item_subsection" [formGroup]="contactForm" (ngSubmit)="submit()">
+    <fieldset>
+      <legend><h3>Formulario de Contacto</h3></legend>
+      <div class="form_container">
+        <div class="item_form_container">
+          <img src="">
+          <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*" required>
+        </div>   <!-- End .item_form_container -->
+        <div class="item_form_container">
+          <img src="">
+          <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*" required>
+        </div>   <!-- End .item_form_container -->
+        <div class="item_form_container">
+          <img src="">
+          <input type="text" formControlName="company" id="company" name="company" placeholder="Compañía">
+        </div>   <!-- End .item_form_container -->
+        <div class="item_form_container">
+          <img src="">
+          <input type="text" formControlName="email" id="email" name="email" placeholder="Correo Electrónico*" required>
+        </div>   <!-- End .item_form_container -->
+        <div class="item_form_container">
+          <img src="">
+          <textarea type="text" formControlName="message" id="message" name="message" placeholder="Escribe tu mensaje*" required></textarea>
+        </div>   <!-- End .item_form_container -->
+        <div class="item_form_container">
+          <input type="checkbox" formControlName="terms" id="terms" name="terms" required>
+          <span>Acepto que mis datos sean alamcenados en una base de datos con fines estadísticos y de contacto.</span>
+        </div>   <!-- End .item_form_container -->
+
+        <button type="submit" >Enviar</button>
+        <button type="reset">Limpiar Campos</button>
+      </div>    <!-- End .form_container -->
+    </fieldset>
+  </form>
+  <h4>Datos reactivos del formulario</h4>
+  <ul>
+  <li>Nombre: {{ contactForm.value.firstname }}</li>
+  <li>Apellidos: {{ contactForm.value.lastname }}</li>
+  <li>Compañía: {{ contactForm.value.company }}</li>
+  <li>Email: {{ contactForm.value.email }}</li>
+  <li>Mensaje: {{ contactForm.value.message }}</li>
+  <li>Términos: {{ contactForm.value.terms }}</li>
+  </ul>
+</div>    <!-- End .subsection -->

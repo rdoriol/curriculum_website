@@ -1,5 +1,5 @@
   <!-- Functions to change mode light/dark icon -->
-{{ mainLoad() }}
+{{ mainLoad() }} <!-- todo-> MALA PRACTICA. MODIFICAR a OnInit en .ts -->
 
 <header>
   <app-main-top-header [cvRobertoChild] = "cvRoberto"></app-main-top-header>
@@ -10,8 +10,8 @@
   <app-resume-page [cvRobertoChild] = "cvRoberto"></app-resume-page>
 </main>
 
-<section> <!-- SECCIÓN FORMULARIO -->
-<app-main-form></app-main-form>
+<section> <!-- FORM SECTION -->
+<app-main-form [cvRobertoChild] = "cvRoberto"></app-main-form>
 </section>
 
 <footer>

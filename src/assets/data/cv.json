@@ -231,11 +231,51 @@
     "training": [
         {
             "icon": "box-select",
-            "title": "Título",
-            "subtitle": "Subtítulo",
-            "description": "Descripción",
-            "date": "Años",
-            "certificate": "https://google.com"
+            "title": "Grado Superior en Desarrollo de Aplicaciones Web",
+            "subtitle": "Instituto Fomento Ocupacional",
+            "description": "2000 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "PCAP - Programming Essentials in Python",
+            "subtitle": "Python Institute",
+            "description": "70 horas",
+            "date": "2024",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Curso Framework Angular. Fernando Herrera",
+            "subtitle": "Plataforma formativa Udemy",
+            "description": "45 horas",
+            "date": "2024",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Python Crash Course - Data Analytic, Django",
+            "subtitle": "Eric Matthes. Formación autodidacta",
+            "description": "70 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Master en PHP 8, POO, MVC, MySQL",
+            "subtitle": "Plataforma formativa Udemy",
+            "description": "62 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+          "icon": "box-select",
+          "title": "Cimientos de Java. Curso para certificación 1Z0-811",
+          "subtitle": "Instituto Fomento Ocupacional. Java Foundation",
+          "description": "70 horas",
+          "date": "2022",
+          "certificate": ""
         }
     ],
     "extras": [

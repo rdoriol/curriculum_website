@@ -19,4 +19,5 @@ export class ResumePageComponent {
 
   @Input()
   public cvRobertoChild: any = {}
-}
+
+}   // End class

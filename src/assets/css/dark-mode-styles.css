@@ -22,7 +22,13 @@ html, body {
   background-color: var(--blackCarbon);
 }
 
+/* Experience / Training
+------------------------*/
 
+.experience .full_experience,
+.training .full_training {
+  background-color: var(--blackLight);
+}
 
 
 

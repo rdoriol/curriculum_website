@@ -4,7 +4,7 @@ import { Component, Input} from '@angular/core';
 @Component({
   selector: 'app-experience',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [CommonModule],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
@@ -15,9 +15,9 @@ export class ExperienceComponent {
   @Input()
   public cvRobertoChild:any = {};
 
+    // Method to scroll to the download CV button
   public scrollDownload(id:string) {
     let selector = document.getElementById(id);
-    //.scrollTo(0, );
      selector!.scrollIntoView({block: "end", behavior: "smooth"});
   }
 
