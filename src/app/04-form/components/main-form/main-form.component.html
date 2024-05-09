@@ -17,13 +17,16 @@
     <fieldset>
       <legend><h3>Formulario de Contacto</h3></legend>
       <div class="form_container">
-        <div class="item_form_container">
+        <div class="item_form_container" >
           <img src="">
-          <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*" required>
+          <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*">
+          <p class="test" *ngIf="contactForm.value.firstname.length > 0 && contactForm.controls.firstname.errors != null ">
+            Campo Nombre es obligatorio
+          </p>
         </div>   <!-- End .item_form_container -->
         <div class="item_form_container">
           <img src="">
-          <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*" required>
+          <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*" >
         </div>   <!-- End .item_form_container -->
         <div class="item_form_container">
           <img src="">
@@ -31,14 +34,14 @@
         </div>   <!-- End .item_form_container -->
         <div class="item_form_container">
           <img src="">
-          <input type="text" formControlName="email" id="email" name="email" placeholder="Correo Electrónico*" required>
+          <input type="text" formControlName="email" id="email" name="email" placeholder="Correo Electrónico*" >
         </div>   <!-- End .item_form_container -->
         <div class="item_form_container">
           <img src="">
-          <textarea type="text" formControlName="message" id="message" name="message" placeholder="Escribe tu mensaje*" required></textarea>
+          <textarea type="text" formControlName="message" id="message" name="message" placeholder="Escribe tu mensaje*" ></textarea>
         </div>   <!-- End .item_form_container -->
         <div class="item_form_container">
-          <input type="checkbox" formControlName="terms" id="terms" name="terms" required>
+          <input type="checkbox" formControlName="terms" id="terms" name="terms" >
           <span>Acepto que mis datos sean alamcenados en una base de datos con fines estadísticos y de contacto.</span>
         </div>   <!-- End .item_form_container -->
 
