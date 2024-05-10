@@ -17,13 +17,31 @@
     <fieldset>
       <legend><h3>Formulario de Contacto</h3></legend>
       <div class="form_container">
-        <div class="item_form_container" >
-          <img src="">
-          <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*">
-          <p class="test" *ngIf="contactForm.value.firstname.length > 0 && contactForm.controls.firstname.errors != null ">
-            Campo Nombre es obligatorio
-          </p>
+
+        <div class="item_form_container">
+          <div class="sub_item_form_container">
+            <img src="">
+            <input type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*"
+              [ngClass]="{
+                          'error_field': submited == false && contactForm.controls.firstname.errors,
+                          'ok_field':submited == false && !contactForm.controls.firstname.errors}">
+          </div> <!-- End .subitem_form_container -->
+          <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.required">
+             Campo obligatorio.
+          </div>
+            <div class="sub_item_form_container" *ngIf="submited == false && contactForm.controls.firstname.errors?.pattern">
+              No admite espacios al principio. <br>No admite números.
+            </div>
+
+
+          <span class="error_form" *ngIf="submited == true && contactForm.controls.firstname.errors?.minlength">
+            Mínimo 3 caracteres.
+          </span>
+          <span class="error_form" *ngIf="submited == false && contactForm.controls.firstname.errors?.maxlength">
+            Máximo 25 caracteres.
+          </span>
         </div>   <!-- End .item_form_container -->
+
         <div class="item_form_container">
           <img src="">
           <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*" >

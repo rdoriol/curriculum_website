@@ -2,6 +2,18 @@
 
 }
 
-.works {
-  background-color: red;
+.error_field {
+
+  border: 3px solid red;
+
+}
+
+.ok_field{
+  background-color: green;
+  border: none;
+}
+
+.item_form_container {
+  display: flex;
+
 }

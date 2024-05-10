@@ -11,17 +11,14 @@ import { ReactiveFormsModule, FormBuilder, Validators} from '@angular/forms';
 })
 export class MainFormComponent implements OnInit {
 
-  @Input()
-  public cvRobertoChild:any = {};
-
   public contactForm:any;
-
   public contactsForm:FormBuilder[] = [];
+  public submited:boolean = false;
 
   constructor(private fb:FormBuilder) {
     this.contactForm = fb.group({
       firstname: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(25),
-                       Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ 'ª`]*)[a-zA-ZñÑÁ-ÿ]$/)]
+                       Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ'ª` ]*)/)]
                  ],
       lastname: ['díaz', [Validators.required, Validators.minLength(3), Validators.maxLength(50),
                       Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ 'ª`.]*)[a-zA-ZñÑÁ-ÿ]$/)]
@@ -30,10 +27,13 @@ export class MainFormComponent implements OnInit {
                      Validators.pattern(/^[a-zA-ZñÑÀ-ÿ0-9]([a-zA-ZñÑÀ-ÿ0-9 'ª`.,&$-]*)[a-zA-ZñÑÁ-ÿ0-9.]$/)]
                ],
       email: ['d@g', [Validators.required, Validators.email]],
-      message: ['hola caracola', [Validators.required, /*Validators.minLength(50),*/ Validators.max(300)]],
+      message: ['hola caracola', [Validators.required, /*Validators.minLength(50),*/ Validators.max(256)]],
       terms: [true, Validators.requiredTrue]
     });
   }
+
+  @Input()
+  public cvRobertoChild:any = {};
 
   ngOnInit() {};
 
@@ -44,17 +44,15 @@ export class MainFormComponent implements OnInit {
 
       this.contactsForm.push(this.contactForm.value);
       console.log(this.contactsForm);
-
-
     }
     else {
       console.log("Error en campos del formulario");
 
     }
-    console.log(this.contactForm.controls.firstname.errors);
-    let prueba = "hola caracola";
-    console.log("longitud " + prueba, ": ", prueba.length);
-    console.log(this.contactForm.value.firstname.length);
+    console.log("Array de Errores: ", this.contactForm.controls.firstname.errors);
+    console.log("Error: ", this.contactForm.controls.firstname.errors.pattern);
+
+
   }
 
 
