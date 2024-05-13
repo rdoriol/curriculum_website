@@ -14,21 +14,22 @@ export class MainFormComponent implements OnInit {
   public contactForm:any;
   public contactsForm:FormBuilder[] = [];
   public submited:boolean = false;
+  public messageSend:string = "";
 
   constructor(private fb:FormBuilder) {
     this.contactForm = fb.group({
       firstname: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(25),
                        Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ'ª` ]*)/)]
                  ],
-      lastname: ['díaz', [Validators.required, Validators.minLength(3), Validators.maxLength(50),
-                      Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ 'ª`.]*)[a-zA-ZñÑÁ-ÿ]$/)]
+      lastname: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(50),
+                      Validators.pattern(/^[a-zA-ZñÑÀ-ÿ]([a-zA-ZñÑÀ-ÿ 'ª`.]*)/)]
                 ],
-      company: ['', [Validators.minLength(4), Validators.maxLength(60),
-                     Validators.pattern(/^[a-zA-ZñÑÀ-ÿ0-9]([a-zA-ZñÑÀ-ÿ0-9 'ª`.,&$-]*)[a-zA-ZñÑÁ-ÿ0-9.]$/)]
+      company: ['', [Validators.minLength(5), Validators.maxLength(60),
+                     Validators.pattern(/^[a-zA-ZñÑÀ-ÿ0-9]([a-zA-ZñÑÀ-ÿ0-9 'ª`.,&$-]*)/)]
                ],
-      email: ['d@g', [Validators.required, Validators.email]],
-      message: ['hola caracola', [Validators.required, /*Validators.minLength(50),*/ Validators.max(256)]],
-      terms: [true, Validators.requiredTrue]
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required, /*Validators.minLength(50),*/ Validators.max(256)]],
+      terms: [false, Validators.requiredTrue]
     });
   }
 
@@ -38,20 +39,20 @@ export class MainFormComponent implements OnInit {
   ngOnInit() {};
 
   public submit() {
+    this.submited = true;
+
     if(this.contactForm.valid) {
       console.log("Formulario correcto y enviado");
-      //this.contactForm.reset();
-
+      this.submited = false;
       this.contactsForm.push(this.contactForm.value);
-      console.log(this.contactsForm);
+      this.contactForm.reset();
+      this.messageSend = "success";
+
     }
     else {
-      console.log("Error en campos del formulario");
-
+      console.log("Errores en campos del formulario");
+      this.messageSend = "error";
     }
-    console.log("Array de Errores: ", this.contactForm.controls.firstname.errors);
-    console.log("Error: ", this.contactForm.controls.firstname.errors.pattern);
-
 
   }
 

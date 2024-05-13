@@ -1,19 +1,55 @@
-.test {
-
+.sub_item_form_container {
+  position: relative;
 }
 
-.error_field {
-
-  border: 3px solid red;
-
+.sub_item_form_container label {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  color: var(--blueElectric);
+  top: -20px;
+  animation: showDownUp 0.8s;
+  z-index: 1;
 }
 
-.ok_field{
-  background-color: green;
-  border: none;
+.input_container {
+  display: block;
 }
 
 .item_form_container {
   display: flex;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid var(--blueElectric);
+  border-radius: 1px;
+  outline: none;
+  color: #ffffff;
+  background-color: var(--blackCarbon);
+  font-weight: 200;
+}
+
+input::placeholder, textarea::placeholder {
+  background-color: var(--blackCarbon);
+  color: var(--blueElectric);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--blueElectric);
+  border: none;
+}
+
+.error_input_form:focus {
+  outline: 2px solid #ec5252;
 
 }
+.error_field {
+  outline: 2px solid #ec5252;
+  border-bottom: none;
+}
+
+
+

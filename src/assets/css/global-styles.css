@@ -51,6 +51,11 @@ ul {
   100% { translate: 0px 0px }
 }
 
+@keyframes showDownUp {
+  0% { translate: 0px 20px; }
+  100% { translate: 0px 0px;}
+}
+
 /* TOOLTIPS
 --------------*/
 .tooltip_content {

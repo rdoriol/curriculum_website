@@ -61,7 +61,6 @@
     left: calc(50% - 70px);
     transition: 0.5s;
     animation: showUpDown 1s;
-    /*display: none;*/
   }
 
   .name {
