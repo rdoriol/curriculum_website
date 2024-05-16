@@ -1,20 +1,23 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from '../../../email.service';
 
 @Component({
   selector: 'app-main-form',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ ReactiveFormsModule, CommonModule, HttpClientModule ],
+  providers: [ EmailService ],
   templateUrl: './main-form.component.html',
   styleUrl: './main-form.component.css'
 })
 export class MainFormComponent implements OnInit {
 
-  public contactForm:any;
-  public contactsForm:FormBuilder[] = [];
-  public submited:boolean = false;
-  public messageSend:string = "";
+  private contactForm:any;
+  private contactsForm:FormBuilder[] = [];
+  private submited:boolean = false;
+  private messageSend:string = "";
 
   constructor(private fb:FormBuilder) {
     this.contactForm = fb.group({
