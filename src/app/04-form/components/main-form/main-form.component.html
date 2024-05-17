@@ -25,7 +25,7 @@
             <label for="firstname">Nombre*</label>
             <div class="input_container">
               <img src="">
-              <input class="input" type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*"
+              <input class="input" id="firstname" type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*"
                 [ngClass]="{
                             'error_field': submited == true && contactForm.controls.firstname.errors,
                             'error_input_form': submited == true && contactForm.controls.firstname.errors
