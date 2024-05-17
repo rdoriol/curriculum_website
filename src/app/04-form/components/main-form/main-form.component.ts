@@ -46,7 +46,7 @@ export class MainFormComponent implements OnInit {
       console.log("Formulario correcto y enviado");
       this.submited = false;
       this.contactsForm.push(this.contactForm.value);
-      const response = await fetch("/.netlify/functions/contact-form", {
+      const response = await fetch(".netlify/functions/contact-form", {
         method: "POST",
         headers: {
           "Content-Type" : "aplication/json"
