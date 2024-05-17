@@ -49,7 +49,7 @@
   opacity: 0.5;
 }
 
-.email_top_header:hover .email_tooltip_content {
+.email_top_header:hover .email_tooltip_content, .email_top_header:focus .email_tooltip_content {
   display: block;
 }
 
@@ -87,22 +87,18 @@
   padding: 4px;
 }
 
-.light_dark_mode .dark_mode,
-.light_dark_mode .light_mode {
-  /*display: none; */  /*todo eliminar más adelante */
-}
-
 .light_dark_mode .dark_mode img,
 .light_dark_mode .light_mode img {
  display: none;
 }
 
-.light_dark_mode img:hover {
+.light_dark_mode img:hover, .light_dark_mode img:focus {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.light_dark_mode:hover .light_mode, .light_dark_mode:hover .dark_mode {
+.light_dark_mode:hover .light_mode, .light_dark_mode:hover .dark_mode,
+.light_dark_mode:focus .light_mode, .light_dark_mode:focus .dark_mode {
   display: inline-block;
 }
 
@@ -128,7 +124,8 @@
       width: 150px;
     }
 
-    .light_dark_mode:hover .dark_mode, .light_dark_mode:hover .light_mode {
+    .light_dark_mode:hover .dark_mode, .light_dark_mode:hover .light_mode,
+    .light_dark_mode:focus .dark_mode, .light_dark_mode:focus .light_mode {
       display: flex;
       justify-content: end;
       width: 142px;
@@ -149,11 +146,13 @@
 
   @media(width <=  500px) {
 
-    .email_top_header:hover .second_tooltip_content {
+    .email_top_header:hover .second_tooltip_content,
+    .email_top_header:focus .second_tooltip_content {
       display: block;
     }
 
-    .email_top_header:hover .first_tooltip_content {
+    .email_top_header:hover .first_tooltip_content,
+    .email_top_header:focus .first_tooltip_content {
       display: none;
     }
   }
