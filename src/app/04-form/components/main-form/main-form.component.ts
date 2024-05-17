@@ -39,13 +39,20 @@ export class MainFormComponent implements OnInit {
 
   ngOnInit() {};
 
-  public submit() {
+  public async submit() {
     this.submited = true;
 
     if(this.contactForm.valid) {
       console.log("Formulario correcto y enviado");
       this.submited = false;
       this.contactsForm.push(this.contactForm.value);
+      const response = await fetch("/.netlify/functions/contact-form", {
+        method: "POST",
+        headers: {
+          "Content-Type" : "aplication/json"
+        },
+        body: JSON.stringify(this.contactForm)
+      })
       this.contactForm.reset();
       this.messageSend = "success";
 
