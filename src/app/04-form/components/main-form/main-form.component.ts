@@ -51,7 +51,7 @@ export class MainFormComponent implements OnInit {
         headers: {
           "Content-Type" : "aplication/json"
         },
-        body: this.contactForm
+        body: JSON.stringify(this.contactForm)
       })
       this.contactForm.reset();
       this.messageSend = "success";
