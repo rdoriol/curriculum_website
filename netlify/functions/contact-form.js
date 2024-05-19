@@ -5,6 +5,7 @@ exports.handler = async (event, contact) => {
       console.log("Recibí una solicitud", params);
       return;
     default:
+      console.log("405 - Método no soportado");
       return {
         statusCode: 405,
         message: "Método no soportado"
