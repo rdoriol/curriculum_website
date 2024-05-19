@@ -43,7 +43,7 @@ export class MainFormComponent implements OnInit {
     this.submited = true;
 
     if(this.contactForm.valid) {
-      console.log("Validación formulario correcta y procesado envío");
+      console.log("Validación formulario correcta y procesando envío");
       this.submited = false;
       this.contactsForm.push(this.contactForm.value);
       const response = await fetch("https://robertodiaz.netlify.app/.netlify/functions/contact-form", {
