@@ -1,6 +1,6 @@
 exports.handler = async (event, contact) => {
   switch(event.httpMethod) {
-    case "GET":
+    case "POST":
       const params = JSON.parse(event.body);
       console.log("Recibí una solicitud", params);
       return;
