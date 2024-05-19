@@ -49,7 +49,7 @@ export class MainFormComponent implements OnInit {
       const response = await fetch("https://robertodiaz.netlify.app/.netlify/functions/contact-form", {
         method: "POST",
         headers: {
-          "Content-Type" : "aplication/json"
+          "Content-Type" : "aplication"
         },
         body: this.contactForm
         //body: JSON.stringify(this.contactForm)
