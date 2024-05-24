@@ -1,0 +1,28 @@
+<div class="icon_title_section">
+  <img src="../assets/icons/sections-titles/experience-50x50.png" alt="proyectos_icon">
+    <h2 class="title_section">Trayectoria IT</h2>
+  </div>    <!-- End .icon_title_section -->
+
+  <div class="subsection experience">
+    <div class="item_subsection" *ngFor="let experience of cvRobertoChild.experience">
+      <div class="item_subtitle">
+        <h3>{{ experience.title }}</h3>
+        <h4>{{ experience.subtitle }} - {{ experience.date }}</h4>
+      </div>    <!-- End .item_subtitle -->
+
+      <h4>Competencias</h4>
+      <ul class="ul_experience">
+        <li *ngFor="let item of experience.description">
+          {{ item }}
+        </li>
+      </ul>
+
+    </div>    <!-- End .item_subsection -->
+
+    <div class="full_experience" (click)="scrollDownload('download_cv')">
+      <img src="../assets/icons/add-48x48.png" alt="add_icon">
+      <p href="go_download_cv">Conoce mi <span class="highlight">Trayectoria Profesional</span> completa. <strong>Descarga</strong> mi <span class="highlight">Curriculum Vitae</span></p>
+    </div>
+
+  </div>    <!-- End .subsection -->
+

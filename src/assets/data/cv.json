@@ -1,0 +1,301 @@
+{
+    "avatar": "../assets/images/foto-carnet.jpg",
+    "name": "Roberto Díaz Oriol",
+    "title": "Desarrollador Full Stack",
+    "location": "Sevilla, España",
+    "media": {
+        "email": "rdoriol@gmail.com",
+        "cv": "../assets/data/CV_Roberto_Díaz_Oriol_g.pdf",
+        "github": "https://github.com/rdoriol",
+        "linkedin": "https://www.linkedin.com/in/robertodiazoriol"
+    },
+    "about": "Técnico Superior en Desarrollo de Aplicaciones Web, en continua formación para aumentar mis conocimientos en Backend & Full Stack. Busco mi oportunidad para desarrollar mi carrera profesional como Desarrollador Web | Desarrollador de Software | Analista de Datos.",
+    "technologies": [
+      {
+        "frontend": [
+          {
+            "icon": "../assets/icons/technologies/frontend/javascript-48x48.png",
+            "name": "JavaScript"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/angular-48x48.png",
+            "name": "Angular"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+            "name": "CSS"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
+            "name": "Bootstrap"
+          },
+          {
+            "icon": "../assets/icons/technologies/frontend/html-48x48.png",
+            "name": "HTML"
+          }
+        ]
+      },
+      {
+        "backend": [
+          {
+            "icon": "../assets/icons/technologies/backend/python-48x48.png",
+            "name": "Python"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/fastapi-48x48.png",
+            "name": "FastAPI"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/java94x94.png",
+            "name": "Java"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/php-64x64.png",
+            "name": "PHP"
+          },
+          {
+            "icon": "../assets/icons/technologies/backend/typescript-48x48.png",
+            "name": "TypeScript"
+          }
+        ]
+      },
+      {
+        "database": [
+          {
+            "icon": "../assets/icons/technologies/database/sql-23x23.png",
+            "name": "Lenguaje SQL"
+          },
+          {
+            "icon": "../assets/icons/technologies/database/my-sql-48x48.png",
+            "name": "MySQL"
+          },
+          {
+            "icon": "../assets/icons/technologies/database/oracle-48x48.png",
+            "name": "Oracle"
+          },
+          {
+            "icon": "../assets/icons/technologies/database/mongodb-23x23.png",
+            "name": "MongoDB"
+          }
+        ]
+      },
+      {
+        "knowledges": [
+          {
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Patrón MVC"
+          },
+          {
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Patrones de Diseño Software"
+          },
+          {
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Api Rest"
+          },
+          {
+            "icon": "../assets/icons/technologies/knowledges/tick-48x48.png",
+            "name": "Git, GitHub"
+          }
+        ]
+      }
+    ],
+    "experience": [
+        {
+            "icon": "box-select",
+            "title": "Desarrollador Web",
+            "subtitle": "DPSoft Creative, S.L.",
+            "description": [
+                "Desarrollo de webs con CMS WordPress.",
+                "Maquetación de páginas Web con CSS.",
+                "Personalización de plantillas web con JavaScript, HTML, CSS.",
+                "Backend web con PHP.",
+                "Formación continua en Framework Angular."
+            ],
+            "date": "2003"
+        }
+    ],
+    "projects": [
+        {
+            "icon": "box-select",
+            "title": "Sistema ERP",
+            "subtitle": "LD SoftGestión",
+            "description_title":"Desarrollo Full Stack",
+            "description": "de Sistema ERP integrado en Aplicación Web.",
+            "technologies": [
+                {
+                    "icon": "../assets/icons/technologies/backend/php-64x64.png",
+                    "name": "PHP"
+                },
+                {
+                    "icon": "../assets/icons/technologies/database/my-sql-48x48.png",
+                    "name": "MySQL"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/javascript-48x48.png",
+                  "name": "JavaScript"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/Jquery-48x48.png",
+                  "name": "jQuery"
+                },
+                {
+                  "icon": "../assets/icons/technologies/ajax-48x48.png",
+                  "name": "AJAX"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+                  "name": "CSS"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/bootstrap-48x48.png",
+                  "name": "Bootstrap"
+                },
+                {
+                  "icon": "../assets/icons/technologies/frontend/html-48x48.png",
+                  "name": "HTML"
+                },
+                {
+                  "icon": "../assets/icons/technologies/code-48x48.png",
+                  "name": "Patrón MVC"
+                }
+            ],
+            "images": [
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-1.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-2.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-3.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-4.png"
+                },
+                {
+                  "path": "../assets/images/projects/ld-softgestion/LD-SoftGestion-5.png"
+                }
+            ],
+            "url": "https://www.youtube.com/watch?v=1mwG8beKqGA",
+            "github": "https://github.com/rdoriol/ld_soft_management"
+        },
+        {
+            "icon": "box-select",
+            "title": "Website",
+            "subtitle": "Zhengda Abogados",
+            "description_title":"Desarrollo Frontend",
+            "description": "de Sitio Web apoyado en CMS WordPress.",
+            "technologies": [
+                {
+                    "icon": "devicon-devicon-plain",
+                    "name": "Tecnología"
+                },
+                {
+                    "icon": "devicon-devicon-plain",
+                    "name": "Tecnología"
+                }
+            ],
+            "images": [
+                {
+                  "path": "../assets/images/keyboard.jpg"
+                },
+                {
+                  "path": "../assets/images/foto-carnet.jpg"
+                }
+            ],
+            "url": "https://google.com",
+            "github": "https://github.com"
+        },
+        {
+            "icon": "box-select",
+            "title": "Portfolio Website",
+            "subtitle": "Roberto Díaz Oriol - Portfolio",
+            "description_title":"Desarrollo Full Stack",
+            "description": "de Sitio Web con portfolio personal creado desde cero. Así es, es este mismo sitio que estás viendo.",
+            "technologies": [
+                {
+                    "icon": "devicon-devicon-plain",
+                    "name": "Tecnología"
+                },
+                {
+                    "icon": "devicon-devicon-plain",
+                    "name": "Tecnología"
+                }
+            ],
+            "images": [],
+            "url": "https://google.com",
+            "github": "https://github.com"
+        }
+    ],
+    "training": [
+        {
+            "icon": "box-select",
+            "title": "Grado Superior en Desarrollo de Aplicaciones Web",
+            "subtitle": "Instituto Fomento Ocupacional",
+            "description": "2000 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "PCAP - Programming Essentials in Python",
+            "subtitle": "Python Institute",
+            "description": "70 horas",
+            "date": "2024",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Curso Framework Angular. Fernando Herrera",
+            "subtitle": "Plataforma formativa Udemy",
+            "description": "45 horas",
+            "date": "2024",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Python Crash Course - Data Analytic, Django",
+            "subtitle": "Eric Matthes. Formación autodidacta",
+            "description": "70 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+            "icon": "box-select",
+            "title": "Master en PHP 8, POO, MVC, MySQL",
+            "subtitle": "Plataforma formativa Udemy",
+            "description": "62 horas",
+            "date": "2023",
+            "certificate": ""
+        },
+        {
+          "icon": "box-select",
+          "title": "Cimientos de Java. Curso para certificación 1Z0-811",
+          "subtitle": "Instituto Fomento Ocupacional. Java Foundation",
+          "description": "70 horas",
+          "date": "2022",
+          "certificate": ""
+        }
+    ],
+    "extras": [
+        {
+            "image": "/favicon.ico",
+            "title": "Título",
+            "description": "Descripción",
+            "url": ""
+        },
+        {
+            "image": "/favicon.ico",
+            "title": "Título",
+            "description": "Descripción",
+            "url": ""
+        },
+        {
+            "image": "/favicon.ico",
+            "title": "Título",
+            "description": "Descripción",
+            "url": ""
+        }
+    ]
+}

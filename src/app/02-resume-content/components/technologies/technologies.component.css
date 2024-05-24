@@ -1,0 +1,31 @@
+.item_subtitle img {
+  width: 30px;
+  height: 30px;
+}
+
+.item_subsection ul {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.item_subsection ul li {
+  padding: 2px 10px;
+}
+
+.item_subsection ul li img {
+  width: 23px;
+  height: 23px;
+  vertical-align: text-bottom;
+}
+
+/* TECHNOLOGIES SUBSECTIONS - RESPONSIVE WEB DESIGN
+--------------------------------------------------- */
+
+@media only screen and (width >= 450px) {
+
+  .subsection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+}

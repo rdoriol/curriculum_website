@@ -1,0 +1,35 @@
+/* DARK MODE
+-------------- */
+
+html, body {
+  background-color: var(--blackBody);
+}
+
+.subsection {
+  background-color: var(--blackCarbon);
+  box-shadow: 5px 5px 5px 5px var(--black);
+  font-weight: 200;
+}
+
+.item_subsection {
+  background-color: var(--blackLight);
+}
+
+/* Projects
+-----------*/
+
+.projects .item_subsection .ul_tech_project li {
+  background-color: var(--blackCarbon);
+}
+
+/* Experience / Training
+------------------------*/
+
+.experience .full_experience,
+.training .full_training {
+  background-color: var(--blackLight);
+}
+
+
+
+

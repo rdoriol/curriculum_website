@@ -1,0 +1,63 @@
+<div class="main_header">
+
+  <div class="main_header_name">
+    <h1>{{ cvRobertoChild.name }}</h1>
+    <h3>{{ cvRobertoChild.title }}</h3>
+
+    <ul class="social_media_ul">
+      <li class="item_social_media_li">
+        <span class="tooltip_content email_tooltip_content">{{ cvRobertoChild.media.email }}</span>
+          <a href="mailto: {{ cvRobertoChild.media.email }}" >
+            <div class="flip_container">
+              <div class="flipper">
+                <div class="front_icon">
+                  <img class="" src="../assets/icons/social-icons/email-circle-blue-electric2-64x64.png" alt="email_image">
+                </div> <!-- end front_icon -->
+                <div class="back_icon">
+                  <img class="" src="../assets/icons/social-icons/email-circle-white-blue-electric2-64x64.png" alt="email_image">
+                </div> <!-- end back_icon -->
+              </div> <!-- end flipper -->
+            </div> <!-- end flip_container-->
+          </a>
+      </li>
+
+      <li class="item_social_media_li">
+        <span class="tooltip_content linkedin_tooltip_content">{{ cvRobertoChild.media.linkedin }}</span>
+          <a href="{{ cvRobertoChild.media.linkedin }}" target="_blank">
+            <div class="flip_container">
+              <div class="flipper">
+                <div class="front_icon">
+                  <img class="" src="../assets/icons/social-icons/linkedin-circle-blue-electric2-64x64.png" alt="linkedin_image">
+                </div> <!-- end front_icon -->
+                <div class="back_icon">
+                  <img class="" src="../assets/icons/social-icons/linkedin-circle-white-blue-electric2-64x64.png" alt="email_image">
+                </div> <!-- end back_icon -->
+              </div> <!-- end flipper -->
+            </div> <!-- end flip_container-->
+          </a>
+      </li>
+
+      <li class="item_social_media_li">
+        <span class="tooltip_content github_tooltip_content">{{ cvRobertoChild.media.github }}</span>
+          <a href="{{ cvRobertoChild.media.github }}" target="_blank">
+            <div class="flip_container">
+              <div class="flipper">
+                <div class="front_icon">
+                  <img class="" src="../assets/icons/social-icons/github-circle-black-blue-electric2-64x64.png" alt="linkedin_image">
+                </div> <!-- end front_icon -->
+                <div class="back_icon">
+                  <img class="" src="../assets/icons/social-icons/github-circle-blue-electric2-64x64.png" alt="email_image">
+                </div> <!-- end back_icon -->
+              </div> <!-- end flipper -->
+            </div> <!-- end flip_container-->
+          </a>
+      </li>
+    </ul>
+</div> <!-- main_header_name -->
+
+<div class="photo_carnet"></div>
+
+</div>
+
+
+

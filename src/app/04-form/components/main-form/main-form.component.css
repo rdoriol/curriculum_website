@@ -1,0 +1,73 @@
+ .form_container {
+  display: grid;
+  row-gap: 15px;
+
+}
+
+.sub_item_form_container {
+  position: relative;
+}
+
+ .sub_item_form_container label {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  color: var(--blueElectric);
+  top: -20px;
+  animation: showDownUp 0.8s;
+  z-index: 1;
+}
+
+.input_container {
+  display: block;
+}
+
+.item_form_container {
+  display: flex;
+}
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid var(--blueElectric);
+  border-radius: 1px;
+  outline: none;
+  color: #ffffff;
+  background-color: var(--blackLight);
+  font-weight: 200;
+  padding: 10px;
+}
+
+textarea {
+  border: 1px solid var(--blueElectric);
+}
+
+input::placeholder, textarea::placeholder {
+  background-color: var(--blackLight);
+  color: var(--blueElectric);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--blueElectric);
+  border: none;
+  background-color: var(--blackCarbon);
+}
+
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+/* TODO-> Implementar focus para que aparezca el label */
+
+.error_input_form:focus {
+  outline: 2px solid #ec5252;
+
+}
+.error_field {
+  outline: 2px solid #ec5252;
+  border-bottom: none;
+}
+
+
+

@@ -1,0 +1,101 @@
+<div class="icon_title_section">
+<img src="../assets/icons/sections-titles/projects-50x50.png" alt="proyectos_icon">
+  <h2 class="title_section">Proyectos</h2>
+</div>    <!-- End .icon_title_section -->
+
+<div class="subsection projects">
+  <div class="item_subsection" *ngFor="let item of cvRobertoChild.projects; let indexProject = index">
+
+    <div class="item_subtitle">
+      <h3>{{ item.title }}</h3>
+      <h4>{{ item.subtitle }}</h4>
+    </div>    <!--  End .item_subtitle -->
+
+    <p><span class="highlight">{{ item.description_title }}</span> {{ item.description}}</p>
+
+    <h4>Tecnologías empleadas</h4>
+    <ul class="ul_tech_project">
+      <li class="icon_name" *ngFor="let tech of item.technologies">
+        <img src="{{ tech.icon }}">
+        {{ tech.name }}
+      </li>
+    </ul>
+
+    <h4 id="project_link">Enlaces proyecto</h4>
+    <ul class="social_list">
+      <li>
+        <span class="tooltip_content url_tooltip_content">{{ item.url }}</span>
+        <a href="{{ item.url }}" target="_blank">
+          <div class="flip_container">
+            <div class="flipper">
+              <img class="front_icon" src="../assets/icons/url-64x64.png">
+              <img class="back_icon" src="../assets/icons/url-white-64x64.png">
+            </div>    <!-- End .flip -->
+          </div>    <!-- End .flip_container -->
+        </a>
+      </li>
+      <li>
+        <span class="tooltip_content github_tooltip_content">{{ item.github }}</span>
+        <a href="{{ item.github }}" target="_blank">
+          <div class="flip_container">
+            <div class="flipper">
+              <img class="front_icon" src="../assets/icons/social-icons/github-circle-black-blue-electric2-64x64.png">
+              <img class="back_icon" src="../assets/icons/social-icons/github-circle-blue-electric2-64x64.png">
+            </div>    <!-- End .flip -->
+          </div>    <!-- End .flip_container -->
+        </a>
+      </li>
+    </ul>
+
+          <!-- CAROUSEL
+          -------------->
+    <div class="carousel_container" *ngFor="let image of item.images; let indexImage = index;">
+      <div class="carousel open_modal" *ngIf="indexProject == actualIndexs[indexProject].indexProject && indexImage == actualIndexs[indexProject].indexImage">
+        <img id="carousel_image" src="{{ image.path }}" (click)="openModal(indexProject)"alt="carousel_images">
+        <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
+          <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
+        </button>
+        <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
+          <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
+        </button>
+        <div class="dots_container">
+          <span class="dot"
+            *ngFor="let dot of item.images; let dotIndex = index;"
+            (click)="changeImageDot(indexProject, dotIndex)"
+            [ngClass]="{ 'active_dot': checkDot(indexProject, dotIndex) }"
+          >
+          </span>
+        </div>    <!-- End .dots_container -->
+      </div>    <!--  End .carousel -->
+    </div>    <!--  End .carousel_container -->
+
+          <!-- MODAL
+          ----------->
+    <div class="modal_container" id={{indexProject}}>
+      <div class="modal" *ngFor="let image of item.images; let indexImage = index">
+        <div class="image_container" *ngIf="indexImage == actualIndexs[indexProject].indexImage">
+          <button type="button" class="close" (click)="closeModal(indexProject)">
+            <img class="closeicon" src="../assets/icons/close-white-50x50.png" alt="close_icon">
+          </button>
+          <img id=""  src="{{ image.path }}" alt="modal_images">
+          <button type="button" class="left_button" (click)="changeImage(indexProject, -1);">
+            <img class="arrow" src="../assets/icons/arrow-left-white-50x50.png" alt="arrow_left_icon">
+          </button>
+          <button type="button" class="right_button" (click)="changeImage(indexProject, 1)">
+            <img class="arrow" src="../assets/icons/arrow-right-white-50x50.png" alt="arrow_right_icon">
+          </button>
+          <div class="dots_container">
+            <span class="dot"
+              *ngFor="let dot of item.images; let last = last; let dotIndex = index;"
+              (click)="changeImageDot(indexProject, dotIndex)"
+              [ngClass]="{ 'active_dot': checkDot(indexProject, dotIndex) }"
+            >
+            </span>
+          </div>    <!-- End .dots_container -->
+        </div>   <!-- End .image_container -->
+      </div>    <!-- End .modal -->
+    </div>    <!-- End .modal_container -->
+
+
+  </div>    <!--  End .item_subsection -->
+</div>    <!--  End .subsection -->

@@ -1,0 +1,60 @@
+<div class="icon_title_section">
+  <img src="../assets/icons/sections-titles/technologies-50x50.png" alt="technologies_icon">
+  <h2 class="title_section">Tecnologías</h2>
+</div>    <!-- End .icon_title_section -->
+
+<div class="subsection">
+  <div class="item_subsection">
+    <div class="item_subtitle">
+      <img src="../assets/icons/technologies/frontend-64x64.png" alt="frontend_icon">
+      <h3>Frontend</h3>
+    </div>   <!-- End .item_subtitle -->
+    <ul *ngFor="let item of cvRobertoChild.technologies">
+      <li *ngFor="let subitem of item.frontend">
+        <img src="{{ subitem.icon }}" alt="frontend_icon">
+        {{ subitem.name }}
+      </li>
+    </ul>
+  </div>    <!-- End .item_subsection -->
+
+  <div class="item_subsection">
+    <div class="item_subtitle">
+      <img src="../assets/icons/technologies/backend-64x64.png" alt="backend_icon">
+      <h3>Backend</h3>
+    </div>   <!-- End .item_subtitle -->
+    <ul *ngFor="let item of cvRobertoChild.technologies">
+      <li *ngFor="let subitem of item.backend">
+        <img src="{{ subitem.icon }}" alt="backend_icon">
+        {{ subitem.name }}
+      </li>
+    </ul>
+  </div>    <!-- End .item_subsection -->
+
+  <div class="item_subsection">
+    <div class="item_subtitle">
+      <img src="../assets/icons/technologies/database-50x50.png" alt="frontend_icon">
+      <h3>Base de Datos</h3>
+    </div>   <!-- End .item_subtitle -->
+    <ul *ngFor="let item of cvRobertoChild.technologies">
+      <li *ngFor="let subitem of item.database">
+        <img src="{{ subitem.icon }}" alt="database_icon">
+        {{ subitem.name }}
+      </li>
+    </ul>
+  </div>    <!-- End .item_subsection -->
+
+  <div class="item_subsection">
+    <div class="item_subtitle">
+      <img src="../assets/icons/technologies/knowledge-60x60.png" alt="frontend_icon">
+      <h3>+ Conocimientos</h3>
+    </div>   <!-- End .item_subtitle -->
+    <ul *ngFor="let item of cvRobertoChild.technologies">
+      <li *ngFor="let subitem of item.knowledges">
+        <img src="{{ subitem.icon }}" alt="knowledge_icon">
+        {{ subitem.name }}
+      </li>
+    </ul>
+  </div>    <!-- End .item_subsection -->
+
+
+</div>    <!-- End .subsection -->

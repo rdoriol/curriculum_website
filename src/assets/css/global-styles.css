@@ -1,0 +1,183 @@
+:root {
+  /* Backgrounds Colors*/
+  --blackBody: #1e2129;
+  --black: #111317;
+  --blackCarbon: #3C3E44;
+  --blackLight: #33363d;
+
+  /* Fonts Colors */
+  --whiteDark: #F5F5F5;
+  --whiteDarkLight: #D7D7D7;
+  --whiteDarkness: #E3F3F2; /* de mommento no se utiliza */
+  --blueElectric2: #04FBFF; /* de momento no se está utilizando */
+  --blueElectric: #00b0c8;
+  --yellow: #FFC107;  /* de momento no se está utilizando */
+
+  /* Fonts Families */
+  --museoModerno: "MuseoModerno", sans-serif;
+  --lexend: "Lexend", sans-serif;
+}
+
+/* GLOBALS
+-----------*/
+html, body {
+  box-sizing: border-box;
+  color: var(--whiteDark);
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+a:link, :visited, :active{
+  color: var(--whiteDark);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ANIMATIONS
+--------------*/
+@keyframes fadeIn {   /* animation fade */
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@keyframes showUpDown {
+  0% { translate: 0px -30px }
+  100% { translate: 0px 0px }
+}
+
+@keyframes showDownUp {
+  0% { translate: 0px 20px; }
+  100% { translate: 0px 0px;}
+}
+
+/* TOOLTIPS
+--------------*/
+.tooltip_content {
+  display: none;
+  padding: 10px;
+  border-radius: 2px;
+  width: 130px;
+  height: auto;
+  text-align: center;
+  padding: 4px;
+  background-color: var(--blueElectric);
+  color: #000;
+  font-size: 11px;
+  font-weight: 600;
+  position: absolute;
+  z-index: 1;
+  animation: fadeIn 1.5s;
+}
+
+.tooltip_content a {
+  color: #000;
+}
+
+
+/* SECTIONS
+--------------*/
+section {
+  margin-bottom: 25px;
+}
+
+.icon_title_section {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 15px;
+  padding: 25px;
+  padding-bottom: 5px;
+}
+
+.icon_title_section img {
+  width: 45px;
+  height: 45px;
+}
+
+.icon_title_section .title_section {
+  font-family: var(--museoModerno);
+  display: contents;
+  font-size: 26px;
+}
+
+.subsection {
+  font-family: var(--lexend);
+  line-height: 25px;
+  padding: 25px;
+  padding-top: 1px;
+}
+
+.highlight {
+  color: var(--blueElectric);
+  font-weight: 600;
+}
+
+.item_subsection {
+  margin-top: 23px;
+  border-radius: 5px;
+}
+
+.item_subtitle {
+  font-family: var(--museoModerno);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+}
+
+/* SECTIONS - RESPONSIVE WEB DESIGN
+------------------------------------ */
+
+@media only screen and (width >= 700px) {
+
+  .icon_title_section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .subsection {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (width >= 800px) {
+
+  .icon_title_section {
+    width: 70%;
+  }
+
+  .subsection {
+    width: 70%;
+  }
+}
+
+@media only screen and (width >= 900px) {
+
+  .icon_title_section {
+    width: 65%;
+  }
+
+  .subsection {
+    width: 65%;
+  }
+}
+
+@media only screen and (width >= 1024px) {
+
+  .icon_title_section {
+    width: 50%;
+  }
+
+  .subsection {
+    width: 50%;
+  }
+}

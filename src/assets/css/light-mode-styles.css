@@ -1,0 +1,37 @@
+/* LIGHT MODE
+-------------- */
+
+html, body {
+  background-color: var(--whiteDarkLight);
+}
+
+.title_section {
+  color: var(--black);
+}
+
+.subsection {
+  background-color: var(--whiteDark);
+  box-shadow: none;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.item_subsection {
+  background-color: #ffffff;
+}
+
+
+/* Projects
+-----------*/
+
+.projects .item_subsection .ul_tech_project li {
+  background-color: var(--whiteDark);
+}
+
+/* Experience / Training
+------------------------*/
+
+.experience .full_experience,
+.training .full_training {
+  background-color: #ffffff;
+}
