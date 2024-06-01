@@ -83,12 +83,12 @@ input::placeholder, textarea::placeholder {
 }
 
 input:focus, textarea:focus {
-  outline: 2px solid var(--blueElectric);
+  outline: 1px solid var(--blueElectric);
   border: none;
-  background-color: var(--blackLight);
+  background-color: var(--blackCarbon);
 }
 
-input:focus::placeholder {
+input:focus::placeholder, textarea:focus::placeholder {
   visibility: hidden;
 }
 
