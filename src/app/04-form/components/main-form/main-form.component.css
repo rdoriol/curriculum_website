@@ -16,7 +16,7 @@ legend {
 
 .form_container {
   display: grid;
-  row-gap: 15px;
+  row-gap: 30px;
 }
 
 .item_form_container {
