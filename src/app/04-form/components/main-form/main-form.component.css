@@ -34,9 +34,10 @@ legend {
   position: absolute;
   letter-spacing: 1px;
   font-size: 12px;
+  line-height: normal;
   color: var(--blueElectric);
   font-weight: 400;
-  top: -15px;
+  top: -10px;
   margin-left: 5px;
   padding-left: 5px;
   padding-right: 1px;
