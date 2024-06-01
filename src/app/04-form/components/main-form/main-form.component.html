@@ -21,14 +21,17 @@
         <div class="item_form_container">
 
           <div class="sub_item_form_container">
-            <label for="firstname">Nombre*</label>
+            <label for="firstname" [ngClass]="{'label_active': contactForm.value['firstname']?.length > 0 }">
+              Nombre*
+            </label>
             <div class="input_container">
               <img src="">
               <input class="input" id="firstname" type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*"
                 [ngClass]="{
                             'error_field': submited == true && contactForm.controls.firstname.errors,
                             'error_input_form': submited == true && contactForm.controls.firstname.errors
-                          }">
+                          }"
+              >
               </div>    <!-- End. .input_container -->
           </div>    <!-- End .subitem_form_container -->
           <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors">
@@ -56,7 +59,9 @@
         <div class="item_form_container">
 
           <div class="sub_item_form_container">
-            <label for="lastname">Apellidos*</label>
+            <label for="lastname" [ngClass]="{'label_active': contactForm.value['lastname']?.length > 0 }">
+              Apellidos*
+            </label>
             <div class="input_container">
               <img src="">
               <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*"
@@ -90,7 +95,9 @@
 
         <div class="item_form_container">
           <div class="sub_item_form_container">
-            <label for="company">Compañía</label>
+            <label for="company" [ngClass]="{'label_active': contactForm.value['company']?.length > 0 }">
+              Compañía&nbsp;
+            </label>
             <div class="input_container">
               <img src="">
               <input type="text" formControlName="company" id="company" name="company" placeholder="Compañía"
@@ -123,7 +130,9 @@
         <div class="item_form_container">
 
           <div class="sub_item_form_container">
-            <label for="email">Correo Electrónico</label>
+            <label for="email" [ngClass]="{'label_active': contactForm.value['email']?.length > 0 }">
+              Correo Electrónico*
+            </label>
             <div class="input_container">
               <img src="">
               <input type="text" formControlName="email" id="email" name="email" placeholder="Correo Electrónico*"
@@ -152,7 +161,9 @@
         <div class="item_form_container">
 
           <div class="sub_item_form_container" id="text_area">
-            <label for="message">Mensaje</label>
+            <label for="message" [ngClass]="{'label_active': contactForm.value['message']?.length > 0 }">
+              Mensaje*
+            </label>
             <div class="input_container">
               <img src="">
               <textarea type="text" formControlName="message" id="message" name="message" placeholder="Escribe tu mensaje*"

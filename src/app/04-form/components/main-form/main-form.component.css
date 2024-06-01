@@ -27,14 +27,55 @@ legend {
 .sub_item_form_container {
   position: relative;
   border-bottom: 1px solid var(--blueElectric);
-  /*width: 100%*/
+}
+
+.sub_item_form_container label {
+  display: none;
+  position: absolute;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: var(--blueElectric);
+  top: -15px;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-right: 1px;
+  border-radius: 5px;
+  background-color: var(--blackLight);
+  animation: showDownUp 0.2s;
+  z-index: 1;
+}
+
+.sub_item_form_container:focus-within label {
+  display: block;
+}
+
+.sub_item_form_container .label_active { /* pruebas */
+  display: block;
+ }
+
+input::placeholder, textarea::placeholder {
+  background-color: var(--blackLight);
+  color: var(--blueElectric);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid var(--blueElectric);
+  border: none;
+  background-color: var(--blackCarbon);
+  background-color: var(--blackLight);
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+  visibility: hidden;
 }
 
 #text_area {
   border: 1px solid var(--blueElectric);
-  margin-top: 20px;
+  margin-top: 30px;
   border: none;
-
 }
 
 .item_form_container textarea {
@@ -58,41 +99,9 @@ input, textarea {
   border: none;
 }
 
-/* todo: REFACTOR FROM HERE */
 
- .sub_item_form_container label {
-  display: none;
-  position: absolute;
-  font-size: 12px;
-  color: var(--blueElectric);
-  top: -20px;
-  animation: showDownUp 0.8s;
-  z-index: 1;
-}
+/* TODO  campos de errores IMPLIMENTAR */
 
-.input_container {
-  display: block;
-}
-
-input::placeholder, textarea::placeholder {
-  background-color: var(--blackLight);
-  color: var(--blueElectric);
-  font-size: 14px;
-  font-weight: 400;
-
-}
-
-input:focus, textarea:focus {
-  outline: 1px solid var(--blueElectric);
-  border: none;
-  background-color: var(--blackCarbon);
-}
-
-input:focus::placeholder, textarea:focus::placeholder {
-  visibility: hidden;
-}
-
-/* TODO-> Implementar focus para que aparezca el label */
 
 .error_input_form:focus {
   outline: 2px solid #ec5252;
