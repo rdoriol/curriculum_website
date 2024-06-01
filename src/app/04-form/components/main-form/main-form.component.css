@@ -27,6 +27,21 @@ legend {
 .sub_item_form_container {
   position: relative;
   border-bottom: 1px solid var(--blueElectric);
+  /*width: 100%*/
+}
+
+#text_area {
+  border: 1px solid var(--blueElectric);
+  margin-top: 20px;
+  border: none;
+
+}
+
+.item_form_container textarea {
+  resize: none;
+  width: 183px;
+  height: 150px;
+  border: 1px solid var(--blueElectric);
 }
 
 input, textarea {
@@ -39,12 +54,8 @@ input, textarea {
   padding: 10px;
 }
 
-#text_area {
+.item_form_container .terms {
   border: none;
-}
-
-textarea {
-  border: 1px solid var(--blueElectric);
 }
 
 /* todo: REFACTOR FROM HERE */

@@ -39,6 +39,10 @@ ul {
   padding: 0;
 }
 
+p {
+  line-height: 30px;
+}
+
 /* ANIMATIONS
 --------------*/
 @keyframes fadeIn {   /* animation fade */

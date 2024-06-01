@@ -8,15 +8,14 @@
   <div class="item_subsection">
     <p>
       <span class="highlight">Contacta </span>conmigo enviando un mensaje a <a href="mailto:rdoriol@gmail.com"><span class="highlight">{{ cvRobertoChild.media.email }}</span></a>.
+       O si lo prefieres, puedes cumplimentar el siguiente <span class="highlight">formulario</span>.
     </p>
-    <p>
-      O si lo prefieres, puedes cumplimentar el siguiente <span class="highlight">formulario</span>.
-    </p>
-  </div>
+  </div>    <!-- End .item_subsection -->
 
   <form class="item_subsection" [formGroup]="contactForm" (ngSubmit)="submit()">
     <fieldset>
       <legend><h3>Formulario de Contacto</h3></legend>
+
       <div class="form_container">
 
         <div class="item_form_container">
@@ -184,7 +183,7 @@
 
 
         <div class="item_form_container">
-          <div class="sub_item_form_container"
+          <div class="sub_item_form_container terms"
             [ngClass]=" {
                           'error_field': submited == true && contactForm.controls.terms.errors,
                           'error_input_form': submited == true && contactForm.controls.terms.errors
@@ -215,6 +214,6 @@
         <p *ngSwitchDefault></p>
       </div>
     </fieldset>
-  </form>
+  </form>   <!-- End .item_subsection -->
 
 </div>    <!-- End .subsection -->
