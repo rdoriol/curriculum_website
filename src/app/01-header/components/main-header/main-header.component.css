@@ -1,7 +1,7 @@
 .main_header {
   margin: 0 auto;
   margin-top: 37px;
-  background: rgb( 0, 0, 0, 0.9) url("/assets/images/keyboard.jpg");
+  background: rgb( 0, 0, 0, 0.8) url("/assets/images/keyboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

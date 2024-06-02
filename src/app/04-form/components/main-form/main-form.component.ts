@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, Validators} from '@angular/forms';
 
 @Component({
@@ -39,14 +39,13 @@ export class MainFormComponent implements OnInit {
 
   ngOnInit() {};
 
-  public async submit() {
+  public submit() {
     this.submited = true;
 
     if(this.contactForm.valid) {
       console.log("Validación formulario correcta y procesando envío");
       this.submited = false;
       this.contactsForm.push(this.contactForm.value);
-      
       this.contactForm.reset();
       this.messageSend = "success";
 
@@ -57,82 +56,6 @@ export class MainFormComponent implements OnInit {
     }
 
   }   // End submit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
-  public userForm:contactForm =
-  {
-    name: "",
-    surname: "",
-    company: "",
-    email: "",
-    message: ""
-  };
-
-  public usersForm:any[] = [];
-
-  public pepe() {
-    if(this.userForm.name == "") {
-      console.log("Campo nombre vacío");
-    }
-    else {
-      this.usersForm.push(this.userForm);
-      this.userForm = {
-        name: "",
-        surname: "",
-        company: "",
-        email: "",
-        message: ""
-      }
-    }
-    console.log(this.userForm);
-  }
-  */
-
 
 
 }   // End class
