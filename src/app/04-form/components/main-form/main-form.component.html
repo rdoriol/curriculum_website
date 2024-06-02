@@ -1,0 +1,232 @@
+<div class="icon_title_section" id="section_contact_form">
+    <img src="../assets/icons/sections-titles/contact-form-50x50.png" alt="proyectos_icon">
+      <h2 class="title_section">Contacto</h2>
+  </div>    <!-- End .icon_title_section -->
+  
+  <div class="subsection contact_form">
+  
+    <div class="item_subsection">
+      <p>
+        <span class="highlight">Contacta </span>conmigo enviando un mensaje a <a href="mailto:rdoriol@gmail.com"><span class="highlight">{{ cvRobertoChild.media.email }}</span></a>.
+         O si lo prefieres, puedes cumplimentar el siguiente <span class="highlight">formulario</span>.
+      </p>
+    </div>    <!-- End .item_subsection -->
+  
+    <form class="item_subsection" [formGroup]="contactForm" (ngSubmit)="submit()">
+      <fieldset>
+        <legend><h3>Formulario de Contacto</h3></legend>
+  
+        <div class="form_container">
+  
+          <div class="item_form_container">
+  
+            <div class="sub_item_form_container">
+              <label for="firstname" [ngClass]="{'label_active': contactForm.value['firstname']?.length > 0 }">
+                Nombre*
+              </label>
+              <div class="input_container">
+                <img src="">
+                <input class="input" id="firstname" type="text" formControlName="firstname" id="firstname" name="firstname" placeholder="Nombre*"
+                  [ngClass]="{
+                              'error_field': submited == true && contactForm.controls.firstname.errors,
+                              'error_input_form': submited == true && contactForm.controls.firstname.errors
+                            }"
+                >
+                </div>    <!-- End. .input_container -->
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.firstname.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.required">
+               <span>Campo obligatorio.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.pattern">
+              <span>No admite números ni espacios iniciales.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.minlength">
+              <span>Mínimo 3 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.maxlength">
+              <span>Máximo 25 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+  
+          </div>   <!-- End .item_form_container -->
+  
+  
+          <div class="item_form_container">
+  
+            <div class="sub_item_form_container">
+              <label for="lastname" [ngClass]="{'label_active': contactForm.value['lastname']?.length > 0 }">
+                Apellidos*
+              </label>
+              <div class="input_container">
+                <img src="">
+                <input type="text" formControlName="lastname" id="lastname" name="lastname" placeholder="Apellidos*"
+                [ngClass]=" {
+                              'error_field': submited == true && contactForm.controls.lastname.errors,
+                              'error_input_form': submited == true && contactForm.controls.lastname.errors
+                            }">
+              </div>    <!-- End. .input_container -->
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.lastname.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors?.required">
+               <span>Campo obligatorio.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors?.pattern">
+              <span>No admite números ni espacios iniciales.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors?.minlength">
+              <span>Mínimo 3 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors?.maxlength">
+              <span>Máximo 50 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+  
+          </div>   <!-- End .item_form_container -->
+  
+  
+          <div class="item_form_container">
+            <div class="sub_item_form_container">
+              <label for="company" [ngClass]="{'label_active': contactForm.value['company']?.length > 0 }">
+                Compañía&nbsp;
+              </label>
+              <div class="input_container">
+                <img src="">
+                <input type="text" formControlName="company" id="company" name="company" placeholder="Compañía"
+                [ngClass]=" {
+                              'error_field': submited == true && contactForm.controls.company.errors,
+                              'error_input_form': submited == true && contactForm.controls.company.errors
+                            }">
+              </div>    <!-- End. .input_container -->
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.company.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.company.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.company.errors?.pattern">
+              <span>No admite números ni espacios iniciales.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.company.errors?.minlength">
+              <span>Mínimo 5 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.company.errors?.maxlength">
+              <span>Máximo 60 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+  
+  
+          </div>   <!-- End .item_form_container -->
+  
+  
+          <div class="item_form_container">
+  
+            <div class="sub_item_form_container">
+              <label for="email" [ngClass]="{'label_active': contactForm.value['email']?.length > 0 }">
+                Correo Electrónico*
+              </label>
+              <div class="input_container">
+                <img src="">
+                <input type="text" formControlName="email" id="email" name="email" placeholder="Correo Electrónico*"
+                [ngClass]=" {
+                              'error_field': submited == true && contactForm.controls.email.errors,
+                              'error_input_form': submited == true && contactForm.controls.email.errors
+                            }">
+              </div>    <!-- End. .input_container -->
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.email.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.email.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.email.errors?.required">
+               <span>Campo obligatorio.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.email.errors?.email">
+              <span>Formato no válido.</span>
+           </div>    <!-- End .subitem_form_container -->
+  
+          </div>   <!-- End .item_form_container -->
+  
+  
+          <div class="item_form_container">
+  
+            <div class="sub_item_form_container" id="text_area">
+              <label for="message" [ngClass]="{'label_active': contactForm.value['message']?.length > 0 }">
+                Mensaje*
+              </label>
+              <div class="input_container">
+                <img src="">
+                <textarea type="text" formControlName="message" id="message" name="message" placeholder="Escribe tu mensaje*"
+                [ngClass]=" {
+                              'error_field': submited == true && contactForm.controls.message.errors,
+                              'error_input_form': submited == true && contactForm.controls.message.errors
+                            }">
+                </textarea>
+              </div>    <!-- End. .input_container -->
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.message.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.message.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.message.errors?.required">
+               <span>Campo obligatorio.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.message.errors?.minlength">
+              <span>Mínimo 50 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.message.errors?.maxlength">
+              <span>Máximo 256 caracteres.</span>
+            </div>    <!-- End .subitem_form_container -->
+  
+          </div>   <!-- End .item_form_container -->
+  
+  
+          <div class="item_form_container">
+            <div class="sub_item_form_container terms"
+              [ngClass]=" {
+                            'error_field': submited == true && contactForm.controls.terms.errors,
+                            'error_input_form': submited == true && contactForm.controls.terms.errors
+                          }">
+              <input type="checkbox" formControlName="terms" id="terms" name="terms" >
+              <span>Consiento que mis datos sean almacenados en una base de datos con fines estadísticos y de contacto.</span>
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.terms.errors">
+              <img src="./assets/icons/form/error-30x30.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && !contactForm.controls.terms.errors">
+              <img src="./assets/icons/form/success-48x48.png" atl="error_field">
+            </div>    <!-- End .subitem_form_container -->
+            <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.terms.errors?.required">
+              <span>Campo obligatorio.</span>
+           </div>    <!-- End .subitem_form_container -->
+  
+          </div>   <!-- End .item_form_container -->
+  
+          <button type="submit" >Enviar</button>
+          <button type="reset">Limpiar Campos</button>
+  
+        </div>    <!-- End .form_container -->
+  
+        <div [ngSwitch]="messageSend">
+          <p class="message_errors_fields" *ngSwitchCase="'error'">Errores en el formulario. Revise los campos</p>
+          <p class="message_success_fields" *ngSwitchCase="'success'" >Mensaje enviado con éxito</p>
+          <p *ngSwitchDefault></p>
+        </div>
+      </fieldset>
+    </form>   <!-- End .item_subsection -->
+  
+  </div>    <!-- End .subsection -->
+
+  HOLA CARACOLA
