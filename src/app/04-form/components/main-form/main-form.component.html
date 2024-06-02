@@ -2,24 +2,24 @@
     <img src="../assets/icons/sections-titles/contact-form-50x50.png" alt="proyectos_icon">
       <h2 class="title_section">Contacto</h2>
   </div>    <!-- End .icon_title_section -->
-  
+
   <div class="subsection contact_form">
-  
+
     <div class="item_subsection">
       <p>
         <span class="highlight">Contacta </span>conmigo enviando un mensaje a <a href="mailto:rdoriol@gmail.com"><span class="highlight">{{ cvRobertoChild.media.email }}</span></a>.
          O si lo prefieres, puedes cumplimentar el siguiente <span class="highlight">formulario</span>.
       </p>
     </div>    <!-- End .item_subsection -->
-  
+
     <form class="item_subsection" [formGroup]="contactForm" (ngSubmit)="submit()">
       <fieldset>
         <legend><h3>Formulario de Contacto</h3></legend>
-  
+
         <div class="form_container">
-  
+
           <div class="item_form_container">
-  
+
             <div class="sub_item_form_container">
               <label for="firstname" [ngClass]="{'label_active': contactForm.value['firstname']?.length > 0 }">
                 Nombre*
@@ -52,12 +52,12 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.firstname.errors?.maxlength">
               <span>Máximo 25 caracteres.</span>
             </div>    <!-- End .subitem_form_container -->
-  
+
           </div>   <!-- End .item_form_container -->
-  
-  
+
+
           <div class="item_form_container">
-  
+
             <div class="sub_item_form_container">
               <label for="lastname" [ngClass]="{'label_active': contactForm.value['lastname']?.length > 0 }">
                 Apellidos*
@@ -89,10 +89,10 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.lastname.errors?.maxlength">
               <span>Máximo 50 caracteres.</span>
             </div>    <!-- End .subitem_form_container -->
-  
+
           </div>   <!-- End .item_form_container -->
-  
-  
+
+
           <div class="item_form_container">
             <div class="sub_item_form_container">
               <label for="company" [ngClass]="{'label_active': contactForm.value['company']?.length > 0 }">
@@ -122,13 +122,13 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.company.errors?.maxlength">
               <span>Máximo 60 caracteres.</span>
             </div>    <!-- End .subitem_form_container -->
-  
-  
+
+
           </div>   <!-- End .item_form_container -->
-  
-  
+
+
           <div class="item_form_container">
-  
+
             <div class="sub_item_form_container">
               <label for="email" [ngClass]="{'label_active': contactForm.value['email']?.length > 0 }">
                 Correo Electrónico*
@@ -154,12 +154,12 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.email.errors?.email">
               <span>Formato no válido.</span>
            </div>    <!-- End .subitem_form_container -->
-  
+
           </div>   <!-- End .item_form_container -->
-  
-  
+
+
           <div class="item_form_container">
-  
+
             <div class="sub_item_form_container" id="text_area">
               <label for="message" [ngClass]="{'label_active': contactForm.value['message']?.length > 0 }">
                 Mensaje*
@@ -189,10 +189,10 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.message.errors?.maxlength">
               <span>Máximo 256 caracteres.</span>
             </div>    <!-- End .subitem_form_container -->
-  
+
           </div>   <!-- End .item_form_container -->
-  
-  
+
+
           <div class="item_form_container">
             <div class="sub_item_form_container terms"
               [ngClass]=" {
@@ -211,14 +211,14 @@
             <div class="sub_item_form_container" *ngIf="submited == true && contactForm.controls.terms.errors?.required">
               <span>Campo obligatorio.</span>
            </div>    <!-- End .subitem_form_container -->
-  
+
           </div>   <!-- End .item_form_container -->
-  
+
           <button type="submit" >Enviar</button>
           <button type="reset">Limpiar Campos</button>
-  
+
         </div>    <!-- End .form_container -->
-  
+
         <div [ngSwitch]="messageSend">
           <p class="message_errors_fields" *ngSwitchCase="'error'">Errores en el formulario. Revise los campos</p>
           <p class="message_success_fields" *ngSwitchCase="'success'" >Mensaje enviado con éxito</p>
@@ -226,10 +226,5 @@
         </div>
       </fieldset>
     </form>   <!-- End .item_subsection -->
-  
+
   </div>    <!-- End .subsection -->
-
-  HOLA CARACOLA - soy roberto desde casa de la abuela Juani
-  comprobar desde casa de Lucía y Darío
-
-  nueva rama
