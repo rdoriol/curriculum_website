@@ -17,6 +17,8 @@
   color: var(--blueElectric);
   margin: 0;
   margin-bottom: 10px;
+  font-family: var(--lexend);
+  font-weight: 400;
 }
 
 .training .item_subsection .item_subtitle h4 span {

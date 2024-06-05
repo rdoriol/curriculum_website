@@ -181,51 +181,32 @@
             "github": "https://github.com/rdoriol/ld_soft_management"
         },
         {
-            "icon": "box-select",
-            "title": "Website",
-            "subtitle": "Zhengda Abogados",
-            "description_title":"Desarrollo Frontend",
-            "description": "de Sitio Web apoyado en CMS WordPress.",
-            "technologies": [
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                },
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                }
-            ],
-            "images": [
-                {
-                  "path": "../assets/images/keyboard.jpg"
-                },
-                {
-                  "path": "../assets/images/foto-carnet.jpg"
-                }
-            ],
-            "url": "https://google.com",
-            "github": "https://github.com"
-        },
-        {
-            "icon": "box-select",
-            "title": "Portfolio Website",
-            "subtitle": "Roberto Díaz Oriol - Portfolio",
-            "description_title":"Desarrollo Full Stack",
-            "description": "de Sitio Web con portfolio personal creado desde cero. Así es, es este mismo sitio que estás viendo.",
-            "technologies": [
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                },
-                {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Tecnología"
-                }
-            ],
-            "images": [],
-            "url": "https://google.com",
-            "github": "https://github.com"
+          "icon": "box-select",
+          "title": "Portfolio Website",
+          "subtitle": "Roberto Díaz Oriol - Portfolio (EN CONSTRUCCIÓN)",
+          "description_title":"Desarrollo Full Stack",
+          "description": "de Sitio Web con portfolio personal creado desde cero. Así es, es este mismo sitio que estás viendo. El sitio web está en construcción, pero se puede ir viendo como está quedando.",
+          "technologies": [
+              {
+                  "icon": "../assets/icons/technologies/frontend/angular-48x48.png",
+                  "name": "Angular 17"
+              },
+              {
+                  "icon": "../assets/icons/technologies/frontend/css-48x48.png",
+                  "name": "CSS"
+              },
+              {
+                "icon": "../assets/icons/technologies/backend/fastapi-48x48.png",
+                "name": "FastAPI"
+              },
+              {
+                "icon": "../assets/icons/technologies/database/mongodb-23x23.png",
+                "name": "MongoDB"
+              }
+          ],
+          "images": [],
+          "url": "https://robertodiaz.netlify.app/",
+          "github": "https://github.com/rdoriol/curriculum_website"
         }
     ],
     "training": [
