@@ -56,8 +56,9 @@
   ----------------*/
 
   .top_header_name {
-    /*position: absolute;
-    left: calc(50% - 70px);*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
     transition: 0.5s;
     animation: showUpDown 1s;
   }
