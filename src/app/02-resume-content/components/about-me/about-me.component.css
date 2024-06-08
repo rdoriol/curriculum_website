@@ -2,6 +2,7 @@
   margin-top: 30px;
   transition: 0.4s;
   position: relative;
+  text-align: center;
 }
 
 .download_button a {
@@ -12,12 +13,17 @@
   /* display: flex;
   align-items: center;
   justify-content: center; */
-  margin: 0 auto;
-  padding: 2px 0px;
+  /*margin: 0 auto;
+  padding: 2px 5px; */
   border: 1px solid var(--black);
   border-radius: 3px;
   transition: 0.4s;
-  width: 260px;
+
+}
+
+.download_button a span {
+  float: left;
+  padding: 2px 3px;
 }
 
 .download_button a .highlight {
@@ -28,6 +34,7 @@
 .download_button img {
   width: 30px;
   height: 30px;
+  vertical-align: middle;
 }
 
 .download_button a .highlight::after {
