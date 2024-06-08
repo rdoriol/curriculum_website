@@ -10,15 +10,9 @@
   color: var(--black);
   font-size: 14px;
   font-weight: 600;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /*margin: 0 auto;
-  padding: 2px 5px; */
   border: 1px solid var(--black);
   border-radius: 3px;
   transition: 0.4s;
-
 }
 
 .download_button a span {

@@ -1,7 +1,6 @@
 .main_top_header {
   position: fixed;
   top: 0;
-/*  background-color: var(--black); */
   background: rgba(17, 19, 23, 0.9);
   display: flex;
   justify-content: space-around;
@@ -57,8 +56,8 @@
   ----------------*/
 
   .top_header_name {
-    position: absolute;
-    left: calc(50% - 70px);
+    /*position: absolute;
+    left: calc(50% - 70px);*/
     transition: 0.5s;
     animation: showUpDown 1s;
   }
