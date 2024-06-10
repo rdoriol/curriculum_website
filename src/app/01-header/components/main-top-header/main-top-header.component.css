@@ -44,13 +44,20 @@
   vertical-align: middle;
 }
 
-.email_top_header a:hover {
-  opacity: 0.5;
+@media (any-hover: hover) {
+  .email_top_header a:hover {
+    opacity: 0.5;
+  }
 }
 
-.email_top_header:hover .email_tooltip_content, .email_top_header:focus .email_tooltip_content {
-  display: block;
+@media (any-hover: hover) {
+  .email_top_header:hover .email_tooltip_content, .email_top_header:focus .email_tooltip_content {
+    display: block;
+  }
 }
+
+
+
 
 /* Top Header Name
   ----------------*/
