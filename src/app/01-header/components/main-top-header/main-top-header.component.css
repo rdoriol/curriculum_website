@@ -41,7 +41,7 @@
 .email_top_header a img {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 }
 
 /* TODO-> pruebas hover dispositivos táctiles */

@@ -2,9 +2,9 @@
   <div class="item_main_top_header email_top_header">
     <span class="tooltip_content email_tooltip_content">Contacta conmigo</span>
     <a href="mailto:{{cvRobertoChild.media.email}}">
-      <img class="email_blue" src="../assets/icons/social-icons/email-blue-64x64.png" alt="email_image">
-      <span *ngIf="screenWidht >= 500 || windowScroll < 50"> {{ cvRobertoChild.media.email }} </span>
-      <span *ngIf="screenWidht >= 400 && screenWidht <= 499 && windowScroll > 50"> Contactar </span>
+      <img class="email_blue" src="../assets/icons/social-icons/email-blue-30x30.png" alt="email_image">
+      <div *ngIf="screenWidht >= 500 || windowScroll < 50"> {{ cvRobertoChild.media.email }} </div>
+      <div *ngIf="screenWidht >= 400 && screenWidht <= 499 && windowScroll > 50"> Contactar </div>
     </a>
   </div>
   <div class="item_main_top_header top_header_name" *ngIf="windowScroll >= 50">
