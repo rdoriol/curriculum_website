@@ -44,6 +44,7 @@
   vertical-align: middle;
 }
 
+/* TODO-> pruebas hover dispositivos táctiles */
 @media (hover: hover) {
   .email_top_header a:hover {
     opacity: 0.5;
