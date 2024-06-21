@@ -44,6 +44,7 @@
 
 .projects .item_subsection .ul_tech_project li {
   width: 114px;
+  width: max-content;
   padding: 5px;
   border-radius: 3px;
 }
