@@ -64,7 +64,7 @@
 }
 
 #project_link {
-width: 133px;
+width: max-content;
 }
 
 .projects .item_subsection .social_list {
