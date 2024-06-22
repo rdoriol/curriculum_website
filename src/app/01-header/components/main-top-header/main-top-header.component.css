@@ -51,7 +51,7 @@
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .email_top_header:hover .email_tooltip_content/*, .email_top_header:focus .email_tooltip_content */{
     display: block;
   }
