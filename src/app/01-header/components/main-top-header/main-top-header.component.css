@@ -45,7 +45,7 @@
 }
 
 /* TODO-> pruebas hover dispositivos táctiles */
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .email_top_header a:hover {
     opacity: 0.5;
   }
