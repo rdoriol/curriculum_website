@@ -5,8 +5,6 @@ import * as cvJson from '../assets/data/cv.json';   // import to work with JSON 
 
 import { MainHeaderComponent } from './01-header/components/main-header/main-header.component';
 import { MainTopHeaderComponent } from './01-header/components/main-top-header/main-top-header.component';
-import { SecondaryHeaderComponent } from './01-header/components/secondary-header/secondary-header.component';
-import { SecondaryTopHeaderComponent } from './01-header/components/secondary-top-header/secondary-top-header.component';
 import { ResumePageComponent } from './02-resume-content/pages/resume-page/resume-page.component';
 import { MainFooterComponent } from './03-footer/components/main-footer/main-footer.component';
 import { SecondaryFooterComponent } from './03-footer/components/secondary-footer/secondary-footer.component';
@@ -20,8 +18,8 @@ import { ImagesProjects } from './05-interfaces/projects-images.interface';
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, MainTopHeaderComponent, SecondaryTopHeaderComponent, MainHeaderComponent,
-    SecondaryHeaderComponent, MainFooterComponent, SecondaryFooterComponent, ResumePageComponent,
+    RouterOutlet, MainTopHeaderComponent, MainHeaderComponent,
+    MainFooterComponent, ResumePageComponent,
     MainFormComponent
   ],
   templateUrl: './app.component.html',
