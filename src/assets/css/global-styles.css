@@ -67,7 +67,7 @@ p {
   display: none;
   padding: 10px;
   border-radius: 2px;
-  width: 130px;
+  width: max-content;
   height: auto;
   text-align: center;
   padding: 4px;
