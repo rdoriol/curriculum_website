@@ -40,15 +40,19 @@
   transition: 0.4s;
 }
 
-.download_button a:hover .highlight::after {
-  width: 100%;
-  transition: 0.4s;
+@media (hover: hover) and (pointer: fine) {
+ .download_button        a:hover .highlight::after {
+   width: 100%;
+   transition: 0.4s;
+ }
 }
 
-.download_button a:hover {
-  cursor: pointer;
-  opacity: 0.4;
-  transition: 0.4s;
+@media (hover: hover) and (pointer: fine) {
+ .download_button a:hover {
+   cursor: pointer;
+   opacity: 0.4;
+   transition: 0.4s;
+ }
 }
 
 .download_tooltip_content {
@@ -58,6 +62,8 @@
   padding: 1px;
 }
 
-.download_button a:hover ~ .download_tooltip_content {
-  display: block;
+@media (hover: hover) and (pointer: fine) {
+ .download_button a:hover ~ .download_tooltip_content {
+   display: block;
+ }
 }
