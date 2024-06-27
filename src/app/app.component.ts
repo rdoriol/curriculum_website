@@ -7,7 +7,6 @@ import { MainHeaderComponent } from './01-header/components/main-header/main-hea
 import { MainTopHeaderComponent } from './01-header/components/main-top-header/main-top-header.component';
 import { ResumePageComponent } from './02-resume-content/pages/resume-page/resume-page.component';
 import { MainFooterComponent } from './03-footer/components/main-footer/main-footer.component';
-import { SecondaryFooterComponent } from './03-footer/components/secondary-footer/secondary-footer.component';
 import { MainFormComponent } from './04-form/components/main-form/main-form.component';
 
 import { CurriculumVitae } from './05-interfaces/curr-vitae.interface';
