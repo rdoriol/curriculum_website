@@ -83,12 +83,12 @@
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
+
   .item_social_media_li:hover .tooltip_content,
   .item_social_media_li:focus .tooltip_content  {
     display: block;
   }
-}
+
 
 /* FLIPPER EFECT
 -----------------*/

@@ -105,16 +105,20 @@
   transform: rotateY(180deg);
 }
 
-.projects .item_subsection .social_list li:hover .flipper {
-  transform: rotateY(180deg);
+@media (hover: hover) and (pointer: fine) {
+  .projects .item_subsection .social_list li:hover .flipper {
+    transform: rotateY(180deg);
+  }
 }
 
 /* TOOLTIP CONTENT
 -------------------*/
 
-.projects .item_subsection .social_list li:hover .url_tooltip_content,
-.projects .item_subsection .social_list li:hover .github_tooltip_content {
-  display: block;
+@media (hover: hover) and (pointer: fine) {
+  .projects .item_subsection .social_list li:hover .url_tooltip_content,
+  .projects .item_subsection .social_list li:hover .github_tooltip_content {
+    display: block;
+  }
 }
 
 .projects .item_subsection .social_list li .url_tooltip_content {
@@ -157,8 +161,10 @@
   object-fit: contain;
 }
 
-#carousel_image:hover {
-  opacity: 0.5;
+@media (hover: hover) and (pointer: fine) {
+  #carousel_image:hover {
+    opacity: 0.5;
+  }
 }
 
 .carousel_container .left_button,
@@ -180,9 +186,11 @@
   left: 90%;
 }
 
-.carousel_container .left_button:hover,
-.carousel_container .right_button:hover {
-  background-color: var(--blackCarbon);
+@media (hover: hover) and (pointer: fine) {
+  .carousel_container .left_button:hover,
+  .carousel_container .right_button:hover {
+    background-color: var(--blackCarbon);
+  }
 }
 
 .carousel_container .dots_container {
@@ -203,9 +211,11 @@
   margin: 0 5px;
 }
 
-.active_dot, .dot:hover {
-  background-color: #C2C2C2;
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .active_dot, .dot:hover {
+    background-color: #C2C2C2;
+    opacity: 1;
+  }
 }
 
 
@@ -302,10 +312,12 @@
   height: 100%;
 }
 
-.modal_container .left_button:hover,
-.modal_container .right_button:hover,
-.modal_container .close:hover {
-  background-color: #000000;
+@media (hover: hover) and (pointer: fine) {
+  .modal_container .left_button:hover,
+  .modal_container .right_button:hover,
+  .modal_container .close:hover {
+    background-color: #000000;
+  }
 }
 
 .modal_container .dots_container {

@@ -62,7 +62,9 @@
   border-radius: 50%;
 }
 
-.full_experience:hover {
-  transform: scale(1.008);
-  box-shadow: 3px 2px 22px 1px black;
+@media (hover: hover) and (pointer: fine) {
+  .full_experience:hover {
+    transform: scale(1.008);
+    box-shadow: 3px 2px 22px 1px black;
+  }
 }
